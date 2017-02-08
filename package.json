@@ -1,0 +1,22 @@
+{
+  "name": "living-style-guide",
+  "version": "1.0.0",
+  "description": "a living style guide for Fetch app for Altavian Inc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "origin http://dflickinger@software.altavian.local:7990/scm/fet/living-style-guide.git"
+  },
+  "author": "Devin Flickinger",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-livingcss": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "minimist": "^1.2.0"
+  }
+}
