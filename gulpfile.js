@@ -34,7 +34,11 @@ gulp.task('browserSync', function(){
 })
 
 gulp.task('clean:dist', function() {
-  return del.sync('dist/*');
+  return del.sync('dist/*.html');
+})
+
+gulp.task('clean:src/css', function(){
+  return del.sync('src/css/*');
 })
 
 gulp.task('watch', function (){
@@ -48,6 +52,7 @@ gulp.task('watch', function (){
 gulp.task('default', function(){
   runSequence(
     'clean:dist',
+    'clean:src/css',
     'sass',
     'livingStyleGen',
     'watch',

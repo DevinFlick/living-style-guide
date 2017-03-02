@@ -8067,110 +8067,124 @@
     <template>
       <style>
       /**
-   * Buttons Are for Girls and Guys
+   * A section for the colors and logos
    *
-   * The Button `.btn` class can be applied to `<button>`, `<input>`, or `<a>` elements.
-   *
-   * @section
-   *
-   * @example
-   * <button class="btn">Button</button>
-   * <input type="submit" class="btn" value="Input"/>
-   * <a href="#" class="btn">Anchor</a>
+   * @section Colors and Logos Section
    */
-  body.base-provider-dashboard-account md-button {
-    background-color: #3383F2; }
-    body.base-provider-dashboard-account md-button .md-btn1 {
-      color: #3383F2; }
+  /**
+   * A color pallet for Fetch Site
+   *
+   * @section Colors Section
+   * @sectionof Colors and Logos Section
+   * @example
+   *
+   * <span class="color-swatch">
+   * <div id="light-blue">
+   * </div>
+   * <div class="color-swatch-title">Light Blue
+   * </div>
+   * </span>
+   *
+   * <span class="color-swatch">
+   * <div id="dark-blue">
+   * </div>
+   * <div class="color-swatch-title">Dark Blue
+   * </div>
+   * </span>
+   *
+   * <span class="color-swatch">
+   * <div id="off-white">
+   * </div>
+   * <div class="color-swatch-title">Off White
+   * </div>
+   * </span>
+   * @hideCode
+   */
+  .color-swatch {
+    width: 200px;
+    border-radius: 2px; }
   
-  body.base-provider-dashboard-documentation md-button {
-    background-color: #3383F2; }
-    body.base-provider-dashboard-documentation md-button .md-btn1 {
-      color: #3383F2; }
+  #light-blue {
+    background-color: #3383f2;
+    width: 200px;
+    height: 200px; }
   
-  body.base-provider-dashboard-client md-button {
-    background-color: #3383F2; }
-    body.base-provider-dashboard-client md-button .md-btn1 {
-      color: #3383F2; }
+  #dark-blue {
+    background-color: #1461ad;
+    width: 200px;
+    height: 200px; }
+  
+  #off-white {
+    background-color: #f7f7f7;
+    width: 200px;
+    height: 200px; }
   
   /**
-     * Primary Button
-     *
-     * A primary button
-     *
-     * @section
-     *
-     * @example
-     * <button class="btn primary">Button</button>
-     * <input type="submit" class="btn primary" value="Input"/>
-     * <a href="#" class="btn primary">Anchor</a>
-     */
+    * A logo section for Fetch Site
+    *
+    * @section Logos Section
+    * @sectionof Colors and Logos Section
+    */
   
   
       /**
-   * Buttons
+   *  Product Cards
    *
-   * The Button `.btn` class can be applied to `<button>`, `<input>`, or `<a>` elements.
+   * The Card for the Products
    *
    * @section
    *
    * @example
-   * <button class="btn">Button</button>
-   * <input type="submit" class="btn" value="Input"/>
-   * <a href="#" class="btn">Anchor</a>
+   * <div class="innercard">
+   * <img src="../img/final-products-elevation.jpg">
+   * <div class="innercardtitle"> Elevation </div>
+   * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+   * <div class="btn"> ADD TO SITE </div>
+   * </div>
    */
+  .innercard {
+    height: 100%;
+    width: 310px; }
+  
+  .innercardtext {
+    /*background-color: red;*/
+    padding-top: 13px;
+    height: 133px;
+    width: 310px;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    color: #8A8A8A;
+    border-bottom: 1px #DFDFDF solid; }
+  
+  .innercardtitle {
+    padding-top: 6px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 26px;
+    color: #8A8A8A; }
+  
   .btn {
-    background-color: #ddd;
-    border-radius: 4px;
-    border: 2px solid transparent;
-    color: black;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1;
-    padding: 5px 15px;
-    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #3384F2;
+    background: #FFFFFF;
+    margin-top: 13px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none; }
   
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #aaa;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  
-    &:disabled {
-      opacity: 0.5;
-    }
-  
-    /**
-     * Primary Button
-     *
-     * A primary button
-     *
-     * @section
-     *
-     * @example
-     * <button class="btn primary">Button</button>
-     * <input type="submit" class="btn primary" value="Input"/>
-     * <a href="#" class="btn primary">Anchor</a>
-     */
-    &.primary {
-      background-color: #60b044;
-      background-image: linear-gradient(#8add6d, #60b044);
-      border-color: #5ca941;
-      color: #fff;
-    }
-    &.primary:hover {
-      background-color: #569e3d;
-      background-image: linear-gradient(#79d858, #569e3d);
-      border-color: #4a993e;
-    }
-  
-    &.smaller {
-      font-size: 10px;
-      padding: 4px 10px;
-    }
-  }
+  .btn:hover {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #3384F2;
+    margin-top: 13px;
+    text-decoration: none; }
   
   
       </style>
@@ -8233,59 +8247,59 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="buttons-are-for-girls-and-guys">
-          <h1 class="livingcss__article-title">Buttons Are for Girls and Guys</h1><div class="livingcss__section-description"><p>The Button <code>.btn</code> class can be applied to <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, or <code>&lt;a&gt;</code> elements.</p></div>
+        <article class="livingcss__article" id="colors-and-logos-section">
+          <h1 class="livingcss__article-title">Colors and Logos Section</h1><div class="livingcss__section-description"><p>A section for the colors and logos</p></div>
 
-<livingcss-example><button class="btn">Button</button>
-<input type="submit" class="btn" value="Input"/>
-<a href="#" class="btn">Anchor</a></livingcss-example>
 
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+
+<section class="livingcss__section" id="colors-and-logos-section-colors-section">
+  <h2>Colors Section</h2><div class="livingcss__section-description"><p>A color pallet for Fetch Site</p></div>
+
+<livingcss-example><span class="color-swatch">
+<div id="light-blue">
 </div>
-
-        </article>
-        <article class="livingcss__article" id="primary-button">
-          <h1 class="livingcss__article-title">Primary Button</h1><div class="livingcss__section-description"><p>A primary button</p></div>
-
-<livingcss-example><button class="btn primary">Button</button>
-<input type="submit" class="btn primary" value="Input"/>
-<a href="#" class="btn primary">Anchor</a></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn primary&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn primary&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn primary&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+<div class="color-swatch-title">Light Blue
 </div>
+</span>
 
-        </article>
-        <article class="livingcss__article" id="buttons">
-          <h1 class="livingcss__article-title">Buttons</h1><div class="livingcss__section-description"><p>The Button <code>.btn</code> class can be applied to <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, or <code>&lt;a&gt;</code> elements.</p></div>
-
-<livingcss-example><button class="btn">Button</button>
-<input type="submit" class="btn" value="Input"/>
-<a href="#" class="btn">Anchor</a></livingcss-example>
-
-<div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+<span class="color-swatch">
+<div id="dark-blue">
 </div>
+<div class="color-swatch-title">Dark Blue
+</div>
+</span>
 
-        </article>
-        <article class="livingcss__article" id="primary-button">
-          <h1 class="livingcss__article-title">Primary Button</h1><div class="livingcss__section-description"><p>A primary button</p></div>
+<span class="color-swatch">
+<div id="off-white">
+</div>
+<div class="color-swatch-title">Off White
+</div>
+</span></livingcss-example>
 
-<livingcss-example><button class="btn primary">Button</button>
-<input type="submit" class="btn primary" value="Input"/>
-<a href="#" class="btn primary">Anchor</a></livingcss-example>
+
+</section><section class="livingcss__section" id="colors-and-logos-section-logos-section">
+  <h2>Logos Section</h2><div class="livingcss__section-description"><p>A logo section for Fetch Site</p></div>
+
+
+
+</section>        </article>
+        <article class="livingcss__article" id="-product-cards">
+          <h1 class="livingcss__article-title"> Product Cards</h1><div class="livingcss__section-description"><p>The Card for the Products</p></div>
+
+<livingcss-example><div class="innercard">
+<img src="../img/final-products-elevation.jpg">
+<div class="innercardtitle"> Elevation </div>
+<div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+<div class="btn"> ADD TO SITE </div>
+</div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn primary&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn primary&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn primary&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;innercard&quot;&gt;
+&lt;img src&#x3D;&quot;../img/final-products-elevation.jpg&quot;&gt;
+&lt;div class&#x3D;&quot;innercardtitle&quot;&gt; Elevation &lt;/div&gt;
+&lt;div class&#x3D;&quot;innercardtext&quot;&gt; A Digital Surface Model (DSM) is a 3D representation of a terrain&#x27;s surface including structures and vegetation. This planet&#x27;s interior heat provides an abundance of geothermal energy for fungus farming. &lt;/div&gt;
+&lt;div class&#x3D;&quot;btn&quot;&gt; ADD TO SITE &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
@@ -8294,10 +8308,8 @@
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#buttons-are-for-girls-and-guys">Buttons Are for Girls and Guys</a>
-          <a class="livingcss__nav-link" href="#primary-button">Primary Button</a>
-          <a class="livingcss__nav-link" href="#buttons">Buttons</a>
-          <a class="livingcss__nav-link" href="#primary-button">Primary Button</a>
+          <a class="livingcss__nav-link" href="#colors-and-logos-section">Colors and Logos Section</a>
+          <a class="livingcss__nav-link" href="#-product-cards"> Product Cards</a>
         </div>
       </nav>
 

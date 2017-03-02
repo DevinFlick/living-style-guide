@@ -1,0 +1,59 @@
+/**
+ * A section for the colors and logos
+ *
+ * @section Colors and Logos Section
+ */
+/**
+ * A color pallet for Fetch Site
+ *
+ * @section Colors Section
+ * @sectionof Colors and Logos Section
+ * @example
+ *
+ * <span class="color-swatch">
+ * <div id="light-blue">
+ * </div>
+ * <div class="color-swatch-title">Light Blue
+ * </div>
+ * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="dark-blue">
+ * </div>
+ * <div class="color-swatch-title">Dark Blue
+ * </div>
+ * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="off-white">
+ * </div>
+ * <div class="color-swatch-title">Off White
+ * </div>
+ * </span>
+ * @hideCode
+ */
+.color-swatch {
+  width: 200px;
+  border-radius: 2px; }
+
+#light-blue {
+  background-color: #3383f2;
+  width: 200px;
+  height: 200px; }
+
+#dark-blue {
+  background-color: #1461ad;
+  width: 200px;
+  height: 200px; }
+
+#off-white {
+  background-color: #f7f7f7;
+  width: 200px;
+  height: 200px; }
+
+/**
+  * A logo section for Fetch Site
+  *
+  * @section Logos Section
+  * @sectionof Colors and Logos Section
+  */
