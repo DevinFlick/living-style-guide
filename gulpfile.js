@@ -20,6 +20,9 @@ gulp.task('livingStyleGen', function(){
   gulp.src('src/css/*.css')
     .pipe(livingcss())
     .pipe(gulp.dest('dist'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 gulp.task('browserSync', function(){
@@ -35,7 +38,8 @@ gulp.task('clean:dist', function() {
 })
 
 gulp.task('watch', function (){
-  gulp.watch('src/scss/**/*.scss', ['build']);
+  gulp.watch('src/scss/**/*.scss', ['sass']);
+  gulp.watch('src/css/*.css', ['livingStyleGen']);
   gulp.watch('dist/*.html', browserSync.reload);
   gulp.watch('src/*.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', browserSync.reload);
