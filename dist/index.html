@@ -8066,7 +8066,8 @@
   </div><dom-module id="styleguide-styles">
     <template>
       <style>
-      /**
+      @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+  /**
    * Break Points
    * @section
    * @example
@@ -8207,54 +8208,28 @@
    * @section
    *
    * @example
-   * <button class="button primary-button">login</button>
-   * <button class="button secondary-button">Upload</button>
+   * <div class="btn"> ADD TO SITE </div>
    */
-  .button {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    color: rgba(0, 0, 0, 0.87);
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    min-height: 36px;
-    min-width: 88px;
-    line-height: 36px;
-    vertical-align: middle;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-grid-row-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .btn {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
     text-align: center;
-    border-radius: 3px;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    outline: none;
-    border: 0;
-    padding: 0 6px;
-    margin: 6px 8px;
-    color: currentColor;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    font-style: inherit;
-    font-variant: inherit;
-    font-family: inherit;
-    text-decoration: none;
-    overflow: hidden;
-    transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    color: #3384F2;
+    background: #FFFFFF;
+    margin-top: 13px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none; }
   
-  .primary-button {
-    background-color: #3383f2; }
-    .primary-button:hover {
-      background-color: #e53935; }
-  
-  .secondary-button {
-    background-color: #fff; }
+  .btn:hover {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #3384F2;
+    margin-top: 13px;
+    text-decoration: none; }
   
   /**
    * Colors
@@ -8527,55 +8502,17 @@
         outline-style: none; }
   
   /**
-   * Personas
+   * NavBar
    *
-   * People exist. That is nice. Also this is a place for icons for users being logged in.
+   * The main navigation menu and components
    *
    * @section
    *
    * @example
-   * <div class="person-gender">
-   * <div class="user">
-   * <img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
-   * <span class="user-text">admin@altavian.com</span>
-   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-   * </div>
-   *
-   * <div class="user">
-   * <img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
-   * <span class="user-text">teri@gmail.com</span>
-   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-   * </div>
-   *
-   * <div class="user">
-   * <img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
-   * <span class="user-text">jonathon@gmail.com</span>
-   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-   * </div>
-   *
-   * <div class="user">
-   * <img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
-   * <span class="user-text">admin@altavian.com</span>
-   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-   * </div>
+   * <div class="navigation-menu">
    *
    * </div>
    */
-  .user-text {
-    position: relative;
-    top: 5px;
-    color: #3383F2; }
-  
-  .user-icon {
-    width: 36px;
-    height: 36px; }
-  
-  .user-down-arrow {
-    position: relative;
-    top: 12px;
-    width: 36px;
-    height: 36px; }
-  
   /**
    *  Product Cards
    *
@@ -8666,6 +8603,8 @@
      * <h5 class="h5">Heading Level 5</h5>
      * </div>
      */
+  div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
+    font-family: Roboto !important; }
   
   
       </style>
@@ -8852,12 +8791,10 @@
         <article class="livingcss__article" id="-buttons">
           <h1 class="livingcss__article-title"> Buttons</h1><div class="livingcss__section-description"><p>Buttons are a things</p></div>
 
-<livingcss-example><button class="button primary-button">login</button>
-<button class="button secondary-button">Upload</button></livingcss-example>
+<livingcss-example><div class="btn"> ADD TO SITE </div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;button primary-button&quot;&gt;login&lt;/button&gt;
-&lt;button class&#x3D;&quot;button secondary-button&quot;&gt;Upload&lt;/button&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;btn&quot;&gt; ADD TO SITE &lt;/div&gt;</code></pre>
 </div>
 
         </article>
@@ -9124,61 +9061,15 @@ RGB rgb(229,57,53)
 </div>
 
         </article>
-        <article class="livingcss__article" id="personas">
-          <h1 class="livingcss__article-title">Personas</h1><div class="livingcss__section-description"><p>People exist. That is nice. Also this is a place for icons for users being logged in.</p></div>
+        <article class="livingcss__article" id="navbar">
+          <h1 class="livingcss__article-title">NavBar</h1><div class="livingcss__section-description"><p>The main navigation menu and components</p></div>
 
-<livingcss-example><div class="person-gender">
-<div class="user">
-<img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
-<span class="user-text">admin@altavian.com</span>
-<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-</div>
-
-<div class="user">
-<img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
-<span class="user-text">teri@gmail.com</span>
-<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-</div>
-
-<div class="user">
-<img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
-<span class="user-text">jonathon@gmail.com</span>
-<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-</div>
-
-<div class="user">
-<img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
-<span class="user-text">admin@altavian.com</span>
-<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
-</div>
+<livingcss-example><div class="navigation-menu">
 
 </div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;person-gender&quot;&gt;
-&lt;div class&#x3D;&quot;user&quot;&gt;
-&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-female-one.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
-&lt;span class&#x3D;&quot;user-text&quot;&gt;admin@altavian.com&lt;/span&gt;
-&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;user&quot;&gt;
-&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-female-two.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
-&lt;span class&#x3D;&quot;user-text&quot;&gt;teri@gmail.com&lt;/span&gt;
-&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;user&quot;&gt;
-&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-male-one.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
-&lt;span class&#x3D;&quot;user-text&quot;&gt;jonathon@gmail.com&lt;/span&gt;
-&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;user&quot;&gt;
-&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-male-two.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
-&lt;span class&#x3D;&quot;user-text&quot;&gt;admin@altavian.com&lt;/span&gt;
-&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
-&lt;/div&gt;
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;navigation-menu&quot;&gt;
 
 &lt;/div&gt;</code></pre>
 </div>
@@ -9264,7 +9155,7 @@ RGB rgb(229,57,53)
           <a class="livingcss__nav-link" href="#-icons"> Icons</a>
           <a class="livingcss__nav-link" href="#lists">Lists</a>
           <a class="livingcss__nav-link" href="#modals">Modals</a>
-          <a class="livingcss__nav-link" href="#personas">Personas</a>
+          <a class="livingcss__nav-link" href="#navbar">NavBar</a>
           <a class="livingcss__nav-link" href="#-product-cards"> Product Cards</a>
           <a class="livingcss__nav-link" href="#typography-section">Typography Section</a>
         </div>

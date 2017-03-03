@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 /**
  * Break Points
  * @section
@@ -139,54 +140,28 @@ table {
  * @section
  *
  * @example
- * <button class="button primary-button">login</button>
- * <button class="button secondary-button">Upload</button>
+ * <div class="btn"> ADD TO SITE </div>
  */
-.button {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  color: rgba(0, 0, 0, 0.87);
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  min-height: 36px;
-  min-width: 88px;
-  line-height: 36px;
-  vertical-align: middle;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-grid-row-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.btn {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
   text-align: center;
-  border-radius: 3px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  outline: none;
-  border: 0;
-  padding: 0 6px;
-  margin: 6px 8px;
-  color: currentColor;
-  white-space: nowrap;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  font-style: inherit;
-  font-variant: inherit;
-  font-family: inherit;
-  text-decoration: none;
-  overflow: hidden;
-  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  color: #3384F2;
+  background: #FFFFFF;
+  margin-top: 13px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
 
-.primary-button {
-  background-color: #3383f2; }
-  .primary-button:hover {
-    background-color: #e53935; }
-
-.secondary-button {
-  background-color: #fff; }
+.btn:hover {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #3384F2;
+  margin-top: 13px;
+  text-decoration: none; }
 
 /**
  * Colors
@@ -459,55 +434,17 @@ table {
       outline-style: none; }
 
 /**
- * Personas
+ * NavBar
  *
- * People exist. That is nice. Also this is a place for icons for users being logged in.
+ * The main navigation menu and components
  *
  * @section
  *
  * @example
- * <div class="person-gender">
- * <div class="user">
- * <img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
- * <span class="user-text">admin@altavian.com</span>
- * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
- * </div>
- *
- * <div class="user">
- * <img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
- * <span class="user-text">teri@gmail.com</span>
- * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
- * </div>
- *
- * <div class="user">
- * <img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
- * <span class="user-text">jonathon@gmail.com</span>
- * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
- * </div>
- *
- * <div class="user">
- * <img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
- * <span class="user-text">admin@altavian.com</span>
- * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
- * </div>
+ * <div class="navigation-menu">
  *
  * </div>
  */
-.user-text {
-  position: relative;
-  top: 5px;
-  color: #3383F2; }
-
-.user-icon {
-  width: 36px;
-  height: 36px; }
-
-.user-down-arrow {
-  position: relative;
-  top: 12px;
-  width: 36px;
-  height: 36px; }
-
 /**
  *  Product Cards
  *
@@ -598,3 +535,5 @@ table {
    * <h5 class="h5">Heading Level 5</h5>
    * </div>
    */
+div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
+  font-family: Roboto !important; }
