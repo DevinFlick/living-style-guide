@@ -132,63 +132,61 @@ table {
     background-color: #f1f6d3; }
 
 /**
- *  Product Cards
+ *  Buttons
  *
- * The Card for the Products
+ * Buttons are a things
  *
  * @section
  *
  * @example
- * <div class="innercard">
- * <img src="../img/final-products-elevation.jpg">
- * <div class="innercardtitle"> Elevation </div>
- * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
- * <div class="btn"> ADD TO SITE </div>
- * </div>
+ * <button class="button primary-button">login</button>
+ * <button class="button secondary-button">Upload</button>
  */
-.innercard {
-  height: 100%;
-  width: 310px; }
-
-.innercardtext {
-  /*background-color: red;*/
-  padding-top: 13px;
-  height: 133px;
-  width: 310px;
-  text-align: left;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 15px;
-  color: #8A8A8A;
-  border-bottom: 1px #DFDFDF solid; }
-
-.innercardtitle {
-  padding-top: 6px;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 26px;
-  color: #8A8A8A; }
-
-.btn {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
+.button {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  min-height: 36px;
+  min-width: 88px;
+  line-height: 36px;
+  vertical-align: middle;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-grid-row-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
-  color: #3384F2;
-  background: #FFFFFF;
-  margin-top: 13px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; }
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  border: 0;
+  padding: 0 6px;
+  margin: 6px 8px;
+  color: currentColor;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
-.btn:hover {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #3384F2;
-  margin-top: 13px;
-  text-decoration: none; }
+.primary-button {
+  background-color: #3383f2; }
+  .primary-button:hover {
+    background-color: #e53935; }
+
+.secondary-button {
+  background-color: #fff; }
 
 /**
  * Colors
@@ -198,35 +196,68 @@ table {
  * <span class="color-swatch">
  * <div id="light-blue" class="swatch">
  * </div>
- * <div class="color-swatch-title">Light Blue rgb(51,131,242)
+ * <div class="color-swatch-title">
+ * Light Blue
+ * </div>
+ * <div class="color-codes">
+ * HEX #3383F2<br>
+ * RGB (51,131,242)
  * </div>
  * </span>
  *
  * <span class="color-swatch">
  * <div id="dark-blue" class="swatch">
  * </div>
- * <div class="color-swatch-title">Dark Blue #1461ad
+ * <div class="color-swatch-title">
+ * Dark Blue
+ * </div>
+ * <div class="color-codes">
+ * HEX #1461ad<br>
+ * RGB (20,97,173)
  * </div>
  * </span>
  *
  * <span class="color-swatch">
  * <div id="off-white" class="swatch">
  * </div>
- * <div class="color-swatch-title">Off White #f7f7f7
+ * <div class="color-swatch-title">
+ * Off White
+ * </div>
+ * <div class="color-codes">
+ * HEX #f7f7f7<br>
+ * RGB (247,247,247)
  * </div>
  * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="red" class="swatch">
  * </div>
+ * <div class="color-swatch-title">
+ * Red
+ * </div>
+ * <div class="color-codes">
+ * HEX #E53935<br>
+ * RGB rgb(229,57,53)
+ * </div>
+ * </span>
+ *
+ * </div>
+ *
  * @hideCode
  */
 .color-swatch-container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
   .color-swatch-container .color-swatch {
     width: 200px; }
     .color-swatch-container .color-swatch .swatch {
       width: 200px;
       height: 200px;
       border-radius: 3px; }
+
+#red {
+  background-color: #e53935; }
 
 #light-blue {
   background-color: #3383f2; }
@@ -300,6 +331,29 @@ table {
     *  </form>
     */
 /**
+ *  Icons
+ *
+ * Icons are tremendous
+ *
+ * @section
+ *
+ * @example
+ * <div class="flexBox">
+ * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+ * <span><img class="icons" src="../icons/gear.png">Gears</span>
+ * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
+ * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
+ * </div>
+ */
+.icons {
+  width: 30px;
+  height: 30px; }
+
+.flexBox {
+  display: flex;
+  justify-content: space-around; }
+
+/**
  *
  * @section Lists
  */
@@ -330,6 +384,130 @@ table {
    * <li class="h5">Heading Level 5</li>
    * </ol>
    */
+/**
+ * Modals
+ *
+ * Modals for creating new project and other things.
+ *
+ * @section
+ *
+ * @example
+ * <div class="modal-content-container">
+ * <div class="modal-toolbar"><h2>Welcome To Fetch</h2></div>
+ * <div class="modal-content">
+ * <h3 class="modal-title">Name Project</h3>
+ * <h4 class="modal-subtitle">NAME</h4>
+ * <input class="inputField" type="text" />
+ * <h3 class="modal-title">Point of Contact</h3>
+ * <h4 class="modal-subtitle">FIRST NAME</h4>
+ * <input class="inputField" type="text" />
+ * <h4 class="modal-subtitle">LAST NAME</h4>
+ * <input class="inputField" type="text" />
+ * </div>
+ * </div>
+ */
+.modal-content-container {
+  color: rgba(0, 0, 0, 0.87);
+  min-width: 600px;
+  height: 744px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  overflow: auto;
+  position: relative; }
+  .modal-content-container .modal-toolbar {
+    background-color: #3383f2;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 56px;
+    color: #fff;
+    text-align: center; }
+  .modal-content-container .modal-content {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0; }
+    .modal-content-container .modal-content .modal-title {
+      color: #3383f2;
+      text-align: center; }
+    .modal-content-container .modal-content .modal-subtitle {
+      color: rgba(0, 0, 0, 0.870588);
+      text-align: center; }
+  .modal-content-container input {
+    order: 2;
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    background: none;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-width: 0 0 1px 0;
+    line-height: 26px;
+    height: 30px;
+    -ms-flex-preferred-size: 26px;
+    border-radius: 0;
+    border-style: solid;
+    width: 50%;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.87);
+    border-color: rgba(0, 0, 0, 0.12); }
+    .modal-content-container input:focus {
+      outline-style: none; }
+
+/**
+ * Personas
+ *
+ * People exist. That is nice. Also this is a place for icons for users being logged in.
+ *
+ * @section
+ *
+ * @example
+ * <div class="person-gender">
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
+ * <span class="user-text">admin@altavian.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
+ * <span class="user-text">teri@gmail.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
+ * <span class="user-text">jonathon@gmail.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
+ * <span class="user-text">admin@altavian.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * </div>
+ */
+.user-text {
+  position: relative;
+  top: 5px;
+  color: #3383F2; }
+
+.user-icon {
+  width: 36px;
+  height: 36px; }
+
+.user-down-arrow {
+  position: relative;
+  top: 12px;
+  width: 36px;
+  height: 36px; }
+
 /**
  *  Product Cards
  *

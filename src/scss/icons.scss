@@ -1,0 +1,25 @@
+/**
+ *  Icons
+ *
+ * Icons are tremendous
+ *
+ * @section
+ *
+ * @example
+ * <div class="flexBox">
+ * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+ * <span><img class="icons" src="../icons/gear.png">Gears</span>
+ * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
+ * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
+ * </div>
+ */
+
+ .icons{
+   width: 30px;
+   height: 30px;
+ }
+
+ .flexBox{
+   display: flex;
+   justify-content: space-around;
+ }

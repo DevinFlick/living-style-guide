@@ -6,29 +6,59 @@
  * <span class="color-swatch">
  * <div id="light-blue" class="swatch">
  * </div>
- * <div class="color-swatch-title">Light Blue rgb(51,131,242)
+ * <div class="color-swatch-title">
+ * Light Blue
+ * </div>
+ * <div class="color-codes">
+ * HEX #3383F2<br>
+ * RGB (51,131,242)
  * </div>
  * </span>
  *
  * <span class="color-swatch">
  * <div id="dark-blue" class="swatch">
  * </div>
- * <div class="color-swatch-title">Dark Blue #1461ad
+ * <div class="color-swatch-title">
+ * Dark Blue
+ * </div>
+ * <div class="color-codes">
+ * HEX #1461ad<br>
+ * RGB (20,97,173)
  * </div>
  * </span>
  *
  * <span class="color-swatch">
  * <div id="off-white" class="swatch">
  * </div>
- * <div class="color-swatch-title">Off White #f7f7f7
+ * <div class="color-swatch-title">
+ * Off White
+ * </div>
+ * <div class="color-codes">
+ * HEX #f7f7f7<br>
+ * RGB (247,247,247)
  * </div>
  * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="red" class="swatch">
  * </div>
+ * <div class="color-swatch-title">
+ * Red
+ * </div>
+ * <div class="color-codes">
+ * HEX #E53935<br>
+ * RGB rgb(229,57,53)
+ * </div>
+ * </span>
+ *
+ * </div>
+ *
  * @hideCode
  */
 .color-swatch-container{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   .color-swatch{
     width: 200px;
     .swatch{
@@ -37,6 +67,9 @@
       border-radius: 3px;
     }
   }
+}
+#red{
+  background-color: rgb(229,57,53);
 }
 #light-blue{
   background-color: rgb(51,131,242);

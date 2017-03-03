@@ -1,0 +1,52 @@
+/**
+ * Personas
+ *
+ * People exist. That is nice. Also this is a place for icons for users being logged in.
+ *
+ * @section
+ *
+ * @example
+ * <div class="person-gender">
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
+ * <span class="user-text">admin@altavian.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
+ * <span class="user-text">teri@gmail.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
+ * <span class="user-text">jonathon@gmail.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * <div class="user">
+ * <img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
+ * <span class="user-text">admin@altavian.com</span>
+ * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+ * </div>
+ *
+ * </div>
+ */
+
+.user-text{
+  position: relative;
+  top: 5px;
+  color: #3383F2;
+}
+ .user-icon{
+   width: 36px;
+   height: 36px;
+ }
+
+ .user-down-arrow{
+   position: relative;
+   top: 12px;
+   width: 36px;
+   height: 36px;
+ }

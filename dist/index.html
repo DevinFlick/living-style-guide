@@ -8200,63 +8200,61 @@
       background-color: #f1f6d3; }
   
   /**
-   *  Product Cards
+   *  Buttons
    *
-   * The Card for the Products
+   * Buttons are a things
    *
    * @section
    *
    * @example
-   * <div class="innercard">
-   * <img src="../img/final-products-elevation.jpg">
-   * <div class="innercardtitle"> Elevation </div>
-   * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
-   * <div class="btn"> ADD TO SITE </div>
-   * </div>
+   * <button class="button primary-button">login</button>
+   * <button class="button secondary-button">Upload</button>
    */
-  .innercard {
-    height: 100%;
-    width: 310px; }
-  
-  .innercardtext {
-    /*background-color: red;*/
-    padding-top: 13px;
-    height: 133px;
-    width: 310px;
-    text-align: left;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 15px;
-    color: #8A8A8A;
-    border-bottom: 1px #DFDFDF solid; }
-  
-  .innercardtitle {
-    padding-top: 6px;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 26px;
-    color: #8A8A8A; }
-  
-  .btn {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 12px;
+  .button {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    color: rgba(0, 0, 0, 0.87);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    min-height: 36px;
+    min-width: 88px;
+    line-height: 36px;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-grid-row-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
-    color: #3384F2;
-    background: #FFFFFF;
-    margin-top: 13px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none; }
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    border: 0;
+    padding: 0 6px;
+    margin: 6px 8px;
+    color: currentColor;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
   
-  .btn:hover {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #3384F2;
-    margin-top: 13px;
-    text-decoration: none; }
+  .primary-button {
+    background-color: #3383f2; }
+    .primary-button:hover {
+      background-color: #e53935; }
+  
+  .secondary-button {
+    background-color: #fff; }
   
   /**
    * Colors
@@ -8266,35 +8264,68 @@
    * <span class="color-swatch">
    * <div id="light-blue" class="swatch">
    * </div>
-   * <div class="color-swatch-title">Light Blue rgb(51,131,242)
+   * <div class="color-swatch-title">
+   * Light Blue
+   * </div>
+   * <div class="color-codes">
+   * HEX #3383F2<br>
+   * RGB (51,131,242)
    * </div>
    * </span>
    *
    * <span class="color-swatch">
    * <div id="dark-blue" class="swatch">
    * </div>
-   * <div class="color-swatch-title">Dark Blue #1461ad
+   * <div class="color-swatch-title">
+   * Dark Blue
+   * </div>
+   * <div class="color-codes">
+   * HEX #1461ad<br>
+   * RGB (20,97,173)
    * </div>
    * </span>
    *
    * <span class="color-swatch">
    * <div id="off-white" class="swatch">
    * </div>
-   * <div class="color-swatch-title">Off White #f7f7f7
+   * <div class="color-swatch-title">
+   * Off White
+   * </div>
+   * <div class="color-codes">
+   * HEX #f7f7f7<br>
+   * RGB (247,247,247)
    * </div>
    * </span>
+   *
+   * <span class="color-swatch">
+   * <div id="red" class="swatch">
    * </div>
+   * <div class="color-swatch-title">
+   * Red
+   * </div>
+   * <div class="color-codes">
+   * HEX #E53935<br>
+   * RGB rgb(229,57,53)
+   * </div>
+   * </span>
+   *
+   * </div>
+   *
    * @hideCode
    */
   .color-swatch-container {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .color-swatch-container .color-swatch {
       width: 200px; }
       .color-swatch-container .color-swatch .swatch {
         width: 200px;
         height: 200px;
         border-radius: 3px; }
+  
+  #red {
+    background-color: #e53935; }
   
   #light-blue {
     background-color: #3383f2; }
@@ -8368,6 +8399,29 @@
       *  </form>
       */
   /**
+   *  Icons
+   *
+   * Icons are tremendous
+   *
+   * @section
+   *
+   * @example
+   * <div class="flexBox">
+   * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+   * <span><img class="icons" src="../icons/gear.png">Gears</span>
+   * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
+   * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
+   * </div>
+   */
+  .icons {
+    width: 30px;
+    height: 30px; }
+  
+  .flexBox {
+    display: flex;
+    justify-content: space-around; }
+  
+  /**
    *
    * @section Lists
    */
@@ -8398,6 +8452,130 @@
      * <li class="h5">Heading Level 5</li>
      * </ol>
      */
+  /**
+   * Modals
+   *
+   * Modals for creating new project and other things.
+   *
+   * @section
+   *
+   * @example
+   * <div class="modal-content-container">
+   * <div class="modal-toolbar"><h2>Welcome To Fetch</h2></div>
+   * <div class="modal-content">
+   * <h3 class="modal-title">Name Project</h3>
+   * <h4 class="modal-subtitle">NAME</h4>
+   * <input class="inputField" type="text" />
+   * <h3 class="modal-title">Point of Contact</h3>
+   * <h4 class="modal-subtitle">FIRST NAME</h4>
+   * <input class="inputField" type="text" />
+   * <h4 class="modal-subtitle">LAST NAME</h4>
+   * <input class="inputField" type="text" />
+   * </div>
+   * </div>
+   */
+  .modal-content-container {
+    color: rgba(0, 0, 0, 0.87);
+    min-width: 600px;
+    height: 744px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    overflow: auto;
+    position: relative; }
+    .modal-content-container .modal-toolbar {
+      background-color: #3383f2;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      height: 56px;
+      color: #fff;
+      text-align: center; }
+    .modal-content-container .modal-content {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      right: 0; }
+      .modal-content-container .modal-content .modal-title {
+        color: #3383f2;
+        text-align: center; }
+      .modal-content-container .modal-content .modal-subtitle {
+        color: rgba(0, 0, 0, 0.870588);
+        text-align: center; }
+    .modal-content-container input {
+      order: 2;
+      display: block;
+      font-size: 14px;
+      margin: 0 auto;
+      background: none;
+      padding-top: 2px;
+      padding-bottom: 1px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 0 0 1px 0;
+      line-height: 26px;
+      height: 30px;
+      -ms-flex-preferred-size: 26px;
+      border-radius: 0;
+      border-style: solid;
+      width: 50%;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.87);
+      border-color: rgba(0, 0, 0, 0.12); }
+      .modal-content-container input:focus {
+        outline-style: none; }
+  
+  /**
+   * Personas
+   *
+   * People exist. That is nice. Also this is a place for icons for users being logged in.
+   *
+   * @section
+   *
+   * @example
+   * <div class="person-gender">
+   * <div class="user">
+   * <img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
+   * <span class="user-text">admin@altavian.com</span>
+   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+   * </div>
+   *
+   * <div class="user">
+   * <img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
+   * <span class="user-text">teri@gmail.com</span>
+   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+   * </div>
+   *
+   * <div class="user">
+   * <img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
+   * <span class="user-text">jonathon@gmail.com</span>
+   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+   * </div>
+   *
+   * <div class="user">
+   * <img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
+   * <span class="user-text">admin@altavian.com</span>
+   * <img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+   * </div>
+   *
+   * </div>
+   */
+  .user-text {
+    position: relative;
+    top: 5px;
+    color: #3383F2; }
+  
+  .user-icon {
+    width: 36px;
+    height: 36px; }
+  
+  .user-down-arrow {
+    position: relative;
+    top: 12px;
+    width: 36px;
+    height: 36px; }
+  
   /**
    *  Product Cards
    *
@@ -8671,23 +8849,15 @@
 
 
         </article>
-        <article class="livingcss__article" id="-product-cards">
-          <h1 class="livingcss__article-title"> Product Cards</h1><div class="livingcss__section-description"><p>The Card for the Products</p></div>
+        <article class="livingcss__article" id="-buttons">
+          <h1 class="livingcss__article-title"> Buttons</h1><div class="livingcss__section-description"><p>Buttons are a things</p></div>
 
-<livingcss-example><div class="innercard">
-<img src="../img/final-products-elevation.jpg">
-<div class="innercardtitle"> Elevation </div>
-<div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
-<div class="btn"> ADD TO SITE </div>
-</div></livingcss-example>
+<livingcss-example><button class="button primary-button">login</button>
+<button class="button secondary-button">Upload</button></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;innercard&quot;&gt;
-&lt;img src&#x3D;&quot;../img/final-products-elevation.jpg&quot;&gt;
-&lt;div class&#x3D;&quot;innercardtitle&quot;&gt; Elevation &lt;/div&gt;
-&lt;div class&#x3D;&quot;innercardtext&quot;&gt; A Digital Surface Model (DSM) is a 3D representation of a terrain&#x27;s surface including structures and vegetation. This planet&#x27;s interior heat provides an abundance of geothermal energy for fungus farming. &lt;/div&gt;
-&lt;div class&#x3D;&quot;btn&quot;&gt; ADD TO SITE &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;button primary-button&quot;&gt;login&lt;/button&gt;
+&lt;button class&#x3D;&quot;button secondary-button&quot;&gt;Upload&lt;/button&gt;</code></pre>
 </div>
 
         </article>
@@ -8698,23 +8868,51 @@
 <span class="color-swatch">
 <div id="light-blue" class="swatch">
 </div>
-<div class="color-swatch-title">Light Blue rgb(51,131,242)
+<div class="color-swatch-title">
+Light Blue
+</div>
+<div class="color-codes">
+HEX #3383F2<br>
+RGB (51,131,242)
 </div>
 </span>
 
 <span class="color-swatch">
 <div id="dark-blue" class="swatch">
 </div>
-<div class="color-swatch-title">Dark Blue #1461ad
+<div class="color-swatch-title">
+Dark Blue
+</div>
+<div class="color-codes">
+HEX #1461ad<br>
+RGB (20,97,173)
 </div>
 </span>
 
 <span class="color-swatch">
 <div id="off-white" class="swatch">
 </div>
-<div class="color-swatch-title">Off White #f7f7f7
+<div class="color-swatch-title">
+Off White
+</div>
+<div class="color-codes">
+HEX #f7f7f7<br>
+RGB (247,247,247)
 </div>
 </span>
+
+<span class="color-swatch">
+<div id="red" class="swatch">
+</div>
+<div class="color-swatch-title">
+Red
+</div>
+<div class="color-codes">
+HEX #E53935<br>
+RGB rgb(229,57,53)
+</div>
+</span>
+
 </div></livingcss-example>
 
 
@@ -8824,6 +9022,26 @@
 </div>
 
 </section>        </article>
+        <article class="livingcss__article" id="-icons">
+          <h1 class="livingcss__article-title"> Icons</h1><div class="livingcss__section-description"><p>Icons are tremendous</p></div>
+
+<livingcss-example><div class="flexBox">
+<span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+<span><img class="icons" src="../icons/gear.png">Gears</span>
+<span><img class="icons" src="../icons/hover.png">Hotspot</span>
+<span><img class="icons" src="../icons/pencil.png">Writing More</span>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;flexBox&quot;&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/check.png&quot;&gt;Check. All Ok.&lt;/span&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/gear.png&quot;&gt;Gears&lt;/span&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/hover.png&quot;&gt;Hotspot&lt;/span&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/pencil.png&quot;&gt;Writing More&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+        </article>
         <article class="livingcss__article" id="lists">
           <h1 class="livingcss__article-title">Lists</h1><div class="livingcss__section-description"></div>
 
@@ -8872,6 +9090,100 @@
 </div>
 
 </section>        </article>
+        <article class="livingcss__article" id="modals">
+          <h1 class="livingcss__article-title">Modals</h1><div class="livingcss__section-description"><p>Modals for creating new project and other things.</p></div>
+
+<livingcss-example><div class="modal-content-container">
+<div class="modal-toolbar"><h2>Welcome To Fetch</h2></div>
+<div class="modal-content">
+<h3 class="modal-title">Name Project</h3>
+<h4 class="modal-subtitle">NAME</h4>
+<input class="inputField" type="text" />
+<h3 class="modal-title">Point of Contact</h3>
+<h4 class="modal-subtitle">FIRST NAME</h4>
+<input class="inputField" type="text" />
+<h4 class="modal-subtitle">LAST NAME</h4>
+<input class="inputField" type="text" />
+</div>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;modal-content-container&quot;&gt;
+&lt;div class&#x3D;&quot;modal-toolbar&quot;&gt;&lt;h2&gt;Welcome To Fetch&lt;/h2&gt;&lt;/div&gt;
+&lt;div class&#x3D;&quot;modal-content&quot;&gt;
+&lt;h3 class&#x3D;&quot;modal-title&quot;&gt;Name Project&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;modal-subtitle&quot;&gt;NAME&lt;/h4&gt;
+&lt;input class&#x3D;&quot;inputField&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;h3 class&#x3D;&quot;modal-title&quot;&gt;Point of Contact&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;modal-subtitle&quot;&gt;FIRST NAME&lt;/h4&gt;
+&lt;input class&#x3D;&quot;inputField&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;h4 class&#x3D;&quot;modal-subtitle&quot;&gt;LAST NAME&lt;/h4&gt;
+&lt;input class&#x3D;&quot;inputField&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="personas">
+          <h1 class="livingcss__article-title">Personas</h1><div class="livingcss__section-description"><p>People exist. That is nice. Also this is a place for icons for users being logged in.</p></div>
+
+<livingcss-example><div class="person-gender">
+<div class="user">
+<img class="user-icon" src="../icons/user-female-one.png" alt="female-user" />
+<span class="user-text">admin@altavian.com</span>
+<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+</div>
+
+<div class="user">
+<img class="user-icon" src="../icons/user-female-two.png" alt="female-user" />
+<span class="user-text">teri@gmail.com</span>
+<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+</div>
+
+<div class="user">
+<img class="user-icon" src="../icons/user-male-one.png" alt="female-user" />
+<span class="user-text">jonathon@gmail.com</span>
+<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+</div>
+
+<div class="user">
+<img class="user-icon" src="../icons/user-male-two.png" alt="female-user" />
+<span class="user-text">admin@altavian.com</span>
+<img class="user-down-arrow" src="../icons/down-arrow.png" alt="down-arrow" />
+</div>
+
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;person-gender&quot;&gt;
+&lt;div class&#x3D;&quot;user&quot;&gt;
+&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-female-one.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
+&lt;span class&#x3D;&quot;user-text&quot;&gt;admin@altavian.com&lt;/span&gt;
+&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;user&quot;&gt;
+&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-female-two.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
+&lt;span class&#x3D;&quot;user-text&quot;&gt;teri@gmail.com&lt;/span&gt;
+&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;user&quot;&gt;
+&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-male-one.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
+&lt;span class&#x3D;&quot;user-text&quot;&gt;jonathon@gmail.com&lt;/span&gt;
+&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;user&quot;&gt;
+&lt;img class&#x3D;&quot;user-icon&quot; src&#x3D;&quot;../icons/user-male-two.png&quot; alt&#x3D;&quot;female-user&quot; /&gt;
+&lt;span class&#x3D;&quot;user-text&quot;&gt;admin@altavian.com&lt;/span&gt;
+&lt;img class&#x3D;&quot;user-down-arrow&quot; src&#x3D;&quot;../icons/down-arrow.png&quot; alt&#x3D;&quot;down-arrow&quot; /&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+        </article>
         <article class="livingcss__article" id="-product-cards">
           <h1 class="livingcss__article-title"> Product Cards</h1><div class="livingcss__section-description"><p>The Card for the Products</p></div>
 
@@ -8946,10 +9258,13 @@
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
           <a class="livingcss__nav-link" href="#break-points">Break Points</a>
-          <a class="livingcss__nav-link" href="#-product-cards"> Product Cards</a>
+          <a class="livingcss__nav-link" href="#-buttons"> Buttons</a>
           <a class="livingcss__nav-link" href="#colors">Colors</a>
           <a class="livingcss__nav-link" href="#forms">Forms</a>
+          <a class="livingcss__nav-link" href="#-icons"> Icons</a>
           <a class="livingcss__nav-link" href="#lists">Lists</a>
+          <a class="livingcss__nav-link" href="#modals">Modals</a>
+          <a class="livingcss__nav-link" href="#personas">Personas</a>
           <a class="livingcss__nav-link" href="#-product-cards"> Product Cards</a>
           <a class="livingcss__nav-link" href="#typography-section">Typography Section</a>
         </div>

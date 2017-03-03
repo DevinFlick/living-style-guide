@@ -1,0 +1,81 @@
+/**
+ * Modals
+ *
+ * Modals for creating new project and other things.
+ *
+ * @section
+ *
+ * @example
+ * <div class="modal-content-container">
+ * <div class="modal-toolbar"><h2>Welcome To Fetch</h2></div>
+ * <div class="modal-content">
+ * <h3 class="modal-title">Name Project</h3>
+ * <h4 class="modal-subtitle">NAME</h4>
+ * <input class="inputField" type="text" />
+ * <h3 class="modal-title">Point of Contact</h3>
+ * <h4 class="modal-subtitle">FIRST NAME</h4>
+ * <input class="inputField" type="text" />
+ * <h4 class="modal-subtitle">LAST NAME</h4>
+ * <input class="inputField" type="text" />
+ * </div>
+ * </div>
+ */
+
+.modal-content-container{
+  color: rgba(0,0,0,0.87);
+  min-width: 600px;
+  height: 744px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  overflow: auto;
+  position: relative;
+  .modal-toolbar{
+    background-color: rgb(51,131,242);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 56px;
+    color: #fff;
+    text-align: center;
+  }
+  .modal-content{
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    .modal-title{
+      color: rgb(51, 131, 242);
+      text-align: center;
+    }
+    .modal-subtitle{
+      color: rgba(0,0,0,0.870588);
+      text-align: center;
+    }
+  }
+  input{
+    order: 2;
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    background: none;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-width: 0 0 1px 0;
+    line-height: 26px;
+    height: 30px;
+    -ms-flex-preferred-size: 26px;
+    border-radius: 0;
+    border-style: solid;
+    width: 50%;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.87);
+    border-color: rgba(0,0,0,0.12);
+    &:focus{
+      outline-style: none;
+    }
+  }
+}

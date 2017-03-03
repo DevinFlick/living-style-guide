@@ -1,67 +1,58 @@
 /**
- *  Product Cards
+ *  Buttons
  *
- * The Card for the Products
+ * Buttons are a things
  *
  * @section
  *
  * @example
- * <div class="innercard">
- * <img src="../img/final-products-elevation.jpg">
- * <div class="innercardtitle"> Elevation </div>
- * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
- * <div class="btn"> ADD TO SITE </div>
- * </div>
+ * <button class="button primary-button">login</button>
+ * <button class="button secondary-button">Upload</button>
  */
- .innercard {
- 	height: 100%;
- 	width: 310px;
- }
-
-
- .innercardtext {
- 	/*background-color: red;*/
- 	padding-top: 13px;
- 	height: 133px;
- 	width: 310px;
- 	text-align: left;
-     font-family: "Roboto";
- 	font-weight: 300;
- 	font-size: 15px;
- 	color: #8A8A8A;
- 	border-bottom: 1px #DFDFDF solid;
- }
-
-
- .innercardtitle {
- 	padding-top: 6px;
- 	font-family: "Roboto";
- 	font-weight: 300;
- 	font-size: 26px;
- 	color: #8A8A8A;
- }
-
-
- .btn {
-   font-family: "Roboto";
-   font-weight: 400;
-   font-size: 12px;
+ .button{
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+   color: rgba(0,0,0,0.87);
+   display: inline-block;
+   position: relative;
+   cursor: pointer;
+   min-height: 36px;
+   min-width: 88px;
+   line-height: 36px;
+   vertical-align: middle;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-grid-row-align: center;
+   -ms-flex-align: center;
+   align-items: center;
    text-align: center;
-   color: #3384F2;
-   background: #FFFFFF;
-   margin-top: 13px;
-   padding: 10px 20px 10px 20px;
+   border-radius: 3px;
+   box-sizing: border-box;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   outline: none;
+   border: 0;
+   padding: 0 6px;
+   margin: 6px 8px;
+   color: currentColor;
+   white-space: nowrap;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 14px;
+   font-style: inherit;
+   font-variant: inherit;
+   font-family: inherit;
    text-decoration: none;
+   overflow: hidden;
+   transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
  }
-
-
- .btn:hover {
-   font-family: "Roboto";
-   font-weight: 400;
-   font-size: 12px;
-   text-align: center;
-   color: #FFFFFF;
-   background: #3384F2;
-   margin-top: 13px;
-   text-decoration: none;
+ .primary-button{
+   background-color: rgb(51,131,242);
+   &:hover{
+     background-color: rgb(229,57,53);
+   }
+ }
+ .secondary-button{
+   background-color: #fff;
  }
