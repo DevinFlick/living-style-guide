@@ -1,62 +1,67 @@
 /**
- * A section for the colors and logos
+ *  Product Cards
  *
- * @section Colors and Logos Section
- */
-
-/**
- * A color pallet for Fetch Site
+ * The Card for the Products
  *
- * @section Colors Section
- * @sectionof Colors and Logos Section
+ * @section
+ *
  * @example
- *
- * <span class="color-swatch">
- * <div id="light-blue">
+ * <div class="innercard">
+ * <img src="../img/final-products-elevation.jpg">
+ * <div class="innercardtitle"> Elevation </div>
+ * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+ * <div class="btn"> ADD TO SITE </div>
  * </div>
- * <div class="color-swatch-title">Light Blue
- * </div>
- * </span>
- *
- * <span class="color-swatch">
- * <div id="dark-blue">
- * </div>
- * <div class="color-swatch-title">Dark Blue
- * </div>
- * </span>
- *
- * <span class="color-swatch">
- * <div id="off-white">
- * </div>
- * <div class="color-swatch-title">Off White
- * </div>
- * </span>
- * @hideCode
  */
-.color-swatch{
-  width: 200px;
-  border-radius: 2px;
-}
-#light-blue{
-  background-color: rgb(51,131,242);
-  width: 200px;
-  height: 200px;
-}
-#dark-blue{
-  background-color: #1461ad;
-  width: 200px;
-  height: 200px;
-}
-#off-white{
-  background-color: #f7f7f7;
-  width: 200px;
-  height: 200px;
-}
+ .innercard {
+ 	height: 100%;
+ 	width: 310px;
+ }
 
 
- /**
-  * A logo section for Fetch Site
-  *
-  * @section Logos Section
-  * @sectionof Colors and Logos Section
-  */
+ .innercardtext {
+ 	/*background-color: red;*/
+ 	padding-top: 13px;
+ 	height: 133px;
+ 	width: 310px;
+ 	text-align: left;
+     font-family: "Roboto";
+ 	font-weight: 300;
+ 	font-size: 15px;
+ 	color: #8A8A8A;
+ 	border-bottom: 1px #DFDFDF solid;
+ }
+
+
+ .innercardtitle {
+ 	padding-top: 6px;
+ 	font-family: "Roboto";
+ 	font-weight: 300;
+ 	font-size: 26px;
+ 	color: #8A8A8A;
+ }
+
+
+ .btn {
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 12px;
+   text-align: center;
+   color: #3384F2;
+   background: #FFFFFF;
+   margin-top: 13px;
+   padding: 10px 20px 10px 20px;
+   text-decoration: none;
+ }
+
+
+ .btn:hover {
+   font-family: "Roboto";
+   font-weight: 400;
+   font-size: 12px;
+   text-align: center;
+   color: #FFFFFF;
+   background: #3384F2;
+   margin-top: 13px;
+   text-decoration: none;
+ }

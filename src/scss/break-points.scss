@@ -1,0 +1,137 @@
+/**
+ * Break Points
+ * @section
+ * @example
+ * <div class="color-swatch-container">
+ * <table>
+ * <tr>
+ * <th>Stylus Variable</th>
+ * <th>Mobile<br> < 768px</th>
+ * <th>Tablet<br> >=768px</th>
+ * <th>Desktop<br> >=992px</th>
+ * <th>Desktop HD<br> >=1200px</th>
+ * </tr>
+ * <tr>
+ * <td class="stylus-variable">$break-mobile
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-tablet-below
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-tablet
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-tablet-above
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop-below
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop-above
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop-hd
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * </tr>
+ *
+ * </table>
+ * </div>
+ * @hideCode
+ */
+
+ table{
+   text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    .stylus-variable{
+      color: #d14;  
+    }
+    th, td{
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .visible{
+      background-color: #f1f6d3;
+    }
+ }

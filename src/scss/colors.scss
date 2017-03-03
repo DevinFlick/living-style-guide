@@ -1,0 +1,49 @@
+/**
+ * Colors
+ * @section
+ * @example
+ * <div class="color-swatch-container">
+ * <span class="color-swatch">
+ * <div id="light-blue" class="swatch">
+ * </div>
+ * <div class="color-swatch-title">Light Blue rgb(51,131,242)
+ * </div>
+ * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="dark-blue" class="swatch">
+ * </div>
+ * <div class="color-swatch-title">Dark Blue #1461ad
+ * </div>
+ * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="off-white" class="swatch">
+ * </div>
+ * <div class="color-swatch-title">Off White #f7f7f7
+ * </div>
+ * </span>
+ * </div>
+ * @hideCode
+ */
+.color-swatch-container{
+  display: flex;
+  justify-content: space-around;
+  .color-swatch{
+    width: 200px;
+    .swatch{
+      width: 200px;
+      height: 200px;
+      border-radius: 3px;
+    }
+  }
+}
+#light-blue{
+  background-color: rgb(51,131,242);
+}
+#dark-blue{
+  background-color: #1461ad;
+}
+#off-white{
+  background-color: #f7f7f7;
+}

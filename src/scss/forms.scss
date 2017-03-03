@@ -1,0 +1,67 @@
+/**
+ *
+ * @section Forms
+ */
+
+ /**
+  *
+  * @section Text Field
+  * @sectionof Forms
+  * @example
+  * <fieldset>
+  * <p>
+  * <label for="text">Text Input</label>
+  * <input id="text" type="text" placeholder="Text Input"/>
+  * </p>
+  * <p>
+  * <label for="textarea">Textarea</label>
+  * <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+  * </p>
+  * <p>
+  * <label for="disabled_text">Disabled Input</label>
+  * <input id="disabled_text" type="text" placeholder="Disabled" disabled/>
+  * </p>
+  * </fieldset>
+  *
+  */
+
+  /**
+   *
+   * @section Select Menu
+   * @sectionof Forms
+   * @example
+   * <label for="select">Select</label>
+   * <select id="select">
+   * <option>Option One</option>
+   * <option>Option Two</option>
+   * <option>Option Three</option>
+   * <option>Option Four</option>
+   * <option>Option Five</option>
+   * <option>Option Six</option>
+   * </select>
+   */
+
+   /**
+    *
+    * @section Checkbox
+    * @sectionof Forms
+    * @example
+    * <form action="#">
+    *   <fieldset>
+    *     <legend>List of checkboxes</legend>
+    *     <ul>
+    *       <li>
+    *         <label><input name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+    *       </li>
+    *       <li>
+    *         <label><input name="checkbox" type="checkbox"/>Choice B</label>
+    *       </li>
+    *       <li>
+    *         <label><input name="checkbox" type="checkbox"/>Choice C</label>
+    *       </li>
+    *     </ul>
+    *   </fieldset>
+    *  </form>
+    */
+
+    

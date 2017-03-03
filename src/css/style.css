@@ -1,0 +1,422 @@
+/**
+ * Break Points
+ * @section
+ * @example
+ * <div class="color-swatch-container">
+ * <table>
+ * <tr>
+ * <th>Stylus Variable</th>
+ * <th>Mobile<br> < 768px</th>
+ * <th>Tablet<br> >=768px</th>
+ * <th>Desktop<br> >=992px</th>
+ * <th>Desktop HD<br> >=1200px</th>
+ * </tr>
+ * <tr>
+ * <td class="stylus-variable">$break-mobile
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-tablet-below
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-tablet
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-tablet-above
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop-below
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td>Hidden
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop-above
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * </tr>
+ *
+ * <tr>
+ * <td class="stylus-variable">$break-desktop-hd
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td>Hidden
+ * </td>
+ * <td class="visible">Visible
+ * </td>
+ * </tr>
+ *
+ * </table>
+ * </div>
+ * @hideCode
+ */
+table {
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #ccc; }
+  table .stylus-variable {
+    color: #d14; }
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px; }
+  table .visible {
+    background-color: #f1f6d3; }
+
+/**
+ *  Product Cards
+ *
+ * The Card for the Products
+ *
+ * @section
+ *
+ * @example
+ * <div class="innercard">
+ * <img src="../img/final-products-elevation.jpg">
+ * <div class="innercardtitle"> Elevation </div>
+ * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+ * <div class="btn"> ADD TO SITE </div>
+ * </div>
+ */
+.innercard {
+  height: 100%;
+  width: 310px; }
+
+.innercardtext {
+  /*background-color: red;*/
+  padding-top: 13px;
+  height: 133px;
+  width: 310px;
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 15px;
+  color: #8A8A8A;
+  border-bottom: 1px #DFDFDF solid; }
+
+.innercardtitle {
+  padding-top: 6px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 26px;
+  color: #8A8A8A; }
+
+.btn {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #3384F2;
+  background: #FFFFFF;
+  margin-top: 13px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+.btn:hover {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #3384F2;
+  margin-top: 13px;
+  text-decoration: none; }
+
+/**
+ * Colors
+ * @section
+ * @example
+ * <div class="color-swatch-container">
+ * <span class="color-swatch">
+ * <div id="light-blue" class="swatch">
+ * </div>
+ * <div class="color-swatch-title">Light Blue rgb(51,131,242)
+ * </div>
+ * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="dark-blue" class="swatch">
+ * </div>
+ * <div class="color-swatch-title">Dark Blue #1461ad
+ * </div>
+ * </span>
+ *
+ * <span class="color-swatch">
+ * <div id="off-white" class="swatch">
+ * </div>
+ * <div class="color-swatch-title">Off White #f7f7f7
+ * </div>
+ * </span>
+ * </div>
+ * @hideCode
+ */
+.color-swatch-container {
+  display: flex;
+  justify-content: space-around; }
+  .color-swatch-container .color-swatch {
+    width: 200px; }
+    .color-swatch-container .color-swatch .swatch {
+      width: 200px;
+      height: 200px;
+      border-radius: 3px; }
+
+#light-blue {
+  background-color: #3383f2; }
+
+#dark-blue {
+  background-color: #1461ad; }
+
+#off-white {
+  background-color: #f7f7f7; }
+
+/**
+ *
+ * @section Forms
+ */
+/**
+  *
+  * @section Text Field
+  * @sectionof Forms
+  * @example
+  * <fieldset>
+  * <p>
+  * <label for="text">Text Input</label>
+  * <input id="text" type="text" placeholder="Text Input"/>
+  * </p>
+  * <p>
+  * <label for="textarea">Textarea</label>
+  * <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+  * </p>
+  * <p>
+  * <label for="disabled_text">Disabled Input</label>
+  * <input id="disabled_text" type="text" placeholder="Disabled" disabled/>
+  * </p>
+  * </fieldset>
+  *
+  */
+/**
+   *
+   * @section Select Menu
+   * @sectionof Forms
+   * @example
+   * <label for="select">Select</label>
+   * <select id="select">
+   * <option>Option One</option>
+   * <option>Option Two</option>
+   * <option>Option Three</option>
+   * <option>Option Four</option>
+   * <option>Option Five</option>
+   * <option>Option Six</option>
+   * </select>
+   */
+/**
+    *
+    * @section Checkbox
+    * @sectionof Forms
+    * @example
+    * <form action="#">
+    *   <fieldset>
+    *     <legend>List of checkboxes</legend>
+    *     <ul>
+    *       <li>
+    *         <label><input name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+    *       </li>
+    *       <li>
+    *         <label><input name="checkbox" type="checkbox"/>Choice B</label>
+    *       </li>
+    *       <li>
+    *         <label><input name="checkbox" type="checkbox"/>Choice C</label>
+    *       </li>
+    *     </ul>
+    *   </fieldset>
+    *  </form>
+    */
+/**
+ *
+ * @section Lists
+ */
+/**
+  *
+  * @section Unordered Lists
+  * @sectionof Lists
+  * @example
+  * <ul>
+  * <li>Heading Level 1</li>
+  * <li>Heading Level 2</li>
+  * <li>Heading Level 3</li>
+  * <li>Heading Level 4</li>
+  * <li>Heading Level 5</li>
+  * </ul>
+  *
+  */
+/**
+   *
+   * @section Ordered Lists
+   * @sectionof Lists
+   * @example
+   * <ol>
+   * <li class="h1">Heading Level 1</li>
+   * <li class="h2">Heading Level 2</li>
+   * <li class="h3">Heading Level 3</li>
+   * <li class="h4">Heading Level 4</li>
+   * <li class="h5">Heading Level 5</li>
+   * </ol>
+   */
+/**
+ *  Product Cards
+ *
+ * The Card for the Products
+ *
+ * @section
+ *
+ * @example
+ * <div class="innercard">
+ * <img src="../img/final-products-elevation.jpg">
+ * <div class="innercardtitle"> Elevation </div>
+ * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+ * <div class="btn"> ADD TO SITE </div>
+ * </div>
+ */
+.innercard {
+  height: 100%;
+  width: 310px; }
+
+.innercardtext {
+  /*background-color: red;*/
+  padding-top: 13px;
+  height: 133px;
+  width: 310px;
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 15px;
+  color: #8A8A8A;
+  border-bottom: 1px #DFDFDF solid; }
+
+.innercardtitle {
+  padding-top: 6px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 26px;
+  color: #8A8A8A; }
+
+.btn {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #3384F2;
+  background: #FFFFFF;
+  margin-top: 13px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+.btn:hover {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #3384F2;
+  margin-top: 13px;
+  text-decoration: none; }
+
+/**
+ *
+ * @section Typography Section
+ */
+/**
+  *
+  * @section Headings
+  * @sectionof Typography Section
+  * @example
+  * <div class="headings">
+  * <h1>Heading Level 1</h1>
+  * <h2>Heading Level 2</h2>
+  * <h3>Heading Level 3</h3>
+  * <h4>Heading Level 4</h4>
+  * <h5>Heading Level 5</h5>
+  * </div>
+  *
+  */
+/**
+   *
+   * @section Heading Classes
+   * @sectionof Typography Section
+   * @example
+   * <div class="headings">
+   * <h1 class="h1">Heading Level 1</h1>
+   * <h2 class="h2">Heading Level 2</h2>
+   * <h3 class="h3">Heading Level 3</h3>
+   * <h4 class="h4">Heading Level 4</h4>
+   * <h5 class="h5">Heading Level 5</h5>
+   * </div>
+   */
