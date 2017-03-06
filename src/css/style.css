@@ -133,11 +133,12 @@ table {
     background-color: #f1f6d3; }
 
 /**
- *  Buttons
+ *  # Buttons
  *
- * Buttons are a things
+ * ### Buttons *are* a things
  *
- * @section
+ * **buttons** *dude*
+ * @section {markdown} *Will* be parsed as `markdown`.
  *
  * @example
  * <div class="btn"> ADD TO SITE </div>
