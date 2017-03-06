@@ -1,4 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url("https://fonts.googleapis.com/css?family=Diplomata+SC");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border: none; }
+
 /**
  * Break Points
  * @section
@@ -144,7 +195,7 @@ table {
  * <div class="btn"> ADD TO SITE </div>
  */
 .btn {
-  font-family: "Roboto";
+  font-family: "Roboto", slab;
   font-weight: 400;
   font-size: 12px;
   text-align: center;
@@ -152,7 +203,8 @@ table {
   background: #FFFFFF;
   margin-top: 13px;
   padding: 10px 20px 10px 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 310px; }
 
 .btn:hover {
   font-family: "Roboto";
@@ -245,6 +297,60 @@ table {
   background-color: #f7f7f7; }
 
 /**
+ *  Icons
+ *
+ * Icons are tremendous
+ *
+ * @section
+ *
+ * @example
+ * <div class="flexBox">
+ * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+ * <span><img class="icons" src="../icons/gear.png">Gears</span>
+ * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
+ * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
+ * </div>
+ */
+.icons {
+  width: 30px;
+  height: 30px; }
+
+.flexBox {
+  display: flex;
+  justify-content: space-around; }
+
+/**
+ *
+ * @section Typography Section
+ */
+/**
+  *
+  * @section Headings
+  * @sectionof Typography Section
+  * @example
+  * <div class="headings">
+  * <h1>Heading Level 1</h1>
+  * <h2>Heading Level 2</h2>
+  * <h3>Heading Level 3</h3>
+  * <h4>Heading Level 4</h4>
+  * <h5>Heading Level 5</h5>
+  * </div>
+  *
+  */
+/**
+   *
+   * @section Heading Classes
+   * @sectionof Typography Section
+   * @example
+   * <div class="headings">
+   * <h1 class="h1">Heading Level 1</h1>
+   * <h2 class="h2">Heading Level 2</h2>
+   * <h3 class="h3">Heading Level 3</h3>
+   * <h4 class="h4">Heading Level 4</h4>
+   * <h5 class="h5">Heading Level 5</h5>
+   * </div>
+   */
+/**
  *
  * @section Forms
  */
@@ -306,29 +412,6 @@ table {
     *   </fieldset>
     *  </form>
     */
-/**
- *  Icons
- *
- * Icons are tremendous
- *
- * @section
- *
- * @example
- * <div class="flexBox">
- * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
- * <span><img class="icons" src="../icons/gear.png">Gears</span>
- * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
- * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
- * </div>
- */
-.icons {
-  width: 30px;
-  height: 30px; }
-
-.flexBox {
-  display: flex;
-  justify-content: space-around; }
-
 /**
  *
  * @section Lists
@@ -454,87 +537,66 @@ table {
  * @section
  *
  * @example
- * <div class="innercard">
- * <img src="../img/final-products-elevation.jpg">
- * <div class="innercardtitle"> Elevation </div>
- * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
- * <div class="btn"> ADD TO SITE </div>
+ * <div class="card product-card">
+ * <div class="card-inner">
+ * <img  class="card-img" src="../img/final-products-elevation.jpg">
+ * <div class="card-title">Elevation</div>
+ * <div class="card-text">A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming.</div>
+ * <button class="btn btn-primary">ADD TO SITE</button>
+ * </div>
  * </div>
  */
-.innercard {
-  height: 100%;
-  width: 310px; }
-
-.innercardtext {
-  /*background-color: red;*/
-  padding-top: 13px;
-  height: 133px;
+.card {
+  display: block;
+  margin: 1% 0 1% 1.6%;
+  background-color: #F7F7F7;
+  height: 330px;
   width: 310px;
-  text-align: left;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 15px;
-  color: #8A8A8A;
-  border-bottom: 1px #DFDFDF solid; }
+  border: 1px solid #FFFFFF;
+  box-shadow: 1px 1px 3px #C8C8C8;
+  padding: 14px; }
+  .card .card-inner {
+    height: 100%;
+    width: 310px; }
+    .card .card-inner .card-text {
+      padding-top: 13px;
+      height: 133px;
+      width: 310px;
+      text-align: left;
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 15px;
+      color: #8A8A8A;
+      border-bottom: 1px #DFDFDF solid; }
+    .card .card-inner .card-img {
+      width: 100%; }
+    .card .card-inner .card-title {
+      padding-top: 6px;
+      font-family: 'Diplomata SC', cursive;
+      font-weight: 300;
+      font-size: 26px;
+      color: #8A8A8A;
+      color: blue;
+      font-size: 52px; }
+    .card .card-inner .btn {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+      color: #3384F2;
+      background: #FFFFFF;
+      margin-top: 13px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none; }
+    .card .card-inner .btn:hover {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #3384F2;
+      margin-top: 13px;
+      text-decoration: none; }
 
-.innercardtitle {
-  padding-top: 6px;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 26px;
-  color: #8A8A8A; }
-
-.btn {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #3384F2;
-  background: #FFFFFF;
-  margin-top: 13px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; }
-
-.btn:hover {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #3384F2;
-  margin-top: 13px;
-  text-decoration: none; }
-
-/**
- *
- * @section Typography Section
- */
-/**
-  *
-  * @section Headings
-  * @sectionof Typography Section
-  * @example
-  * <div class="headings">
-  * <h1>Heading Level 1</h1>
-  * <h2>Heading Level 2</h2>
-  * <h3>Heading Level 3</h3>
-  * <h4>Heading Level 4</h4>
-  * <h5>Heading Level 5</h5>
-  * </div>
-  *
-  */
-/**
-   *
-   * @section Heading Classes
-   * @sectionof Typography Section
-   * @example
-   * <div class="headings">
-   * <h1 class="h1">Heading Level 1</h1>
-   * <h2 class="h2">Heading Level 2</h2>
-   * <h3 class="h3">Heading Level 3</h3>
-   * <h4 class="h4">Heading Level 4</h4>
-   * <h5 class="h5">Heading Level 5</h5>
-   * </div>
-   */
 div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
-  font-family: Roboto !important; }
+  font-family: 'Diplomata' !important; }

@@ -18,11 +18,8 @@ gulp.task('sass', function () {
 
 gulp.task('livingcss', function(){
   gulp.src('src/css/*.css')
-    .pipe(livingcss())
+    .pipe(livingcss('dist', [{template: 'src/template/template.hbs'}]))
     .pipe(gulp.dest('dist'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
 });
 
 gulp.task('browserSync', function(){

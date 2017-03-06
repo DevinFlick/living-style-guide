@@ -1,18 +1,19 @@
-
+@import 'meyers-css-reset';
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
 
-@import 'break-points';
-@import 'buttons';
-@import 'colors';
-@import 'forms';
-@import 'icons';
-@import 'lists';
-@import 'modals';
-@import 'navBar';
-@import 'product-cards';
-@import 'typography';
+@import './atom/atom-style';
+@import './molecule/molecule-style';
+@import './organism/organism-style';
+@import './page/page-style';
+@import './template/template-style';
 
+
+
+//this section styles the Fetch Style Libary itself
+//the templates folder also has styling capabilities
+//these styles supercede the template styles
 div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
   // color: red !important;
-  font-family: Roboto !important;
+  font-family: 'Diplomata' !important;
 }
