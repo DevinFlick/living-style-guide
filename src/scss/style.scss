@@ -1,5 +1,6 @@
-
+@import 'meyers-css-reset';
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
 
 @import './atom/atom-style';
 @import './molecule/molecule-style';
@@ -14,5 +15,5 @@
 //these styles supercede the template styles
 div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
   // color: red !important;
-  font-family: Roboto !important;
+  font-family: 'Diplomata' !important;
 }
