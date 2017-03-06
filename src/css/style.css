@@ -244,6 +244,60 @@ table {
   background-color: #f7f7f7; }
 
 /**
+ *  Icons
+ *
+ * Icons are tremendous
+ *
+ * @section
+ *
+ * @example
+ * <div class="flexBox">
+ * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+ * <span><img class="icons" src="../icons/gear.png">Gears</span>
+ * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
+ * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
+ * </div>
+ */
+.icons {
+  width: 30px;
+  height: 30px; }
+
+.flexBox {
+  display: flex;
+  justify-content: space-around; }
+
+/**
+ *
+ * @section Typography Section
+ */
+/**
+  *
+  * @section Headings
+  * @sectionof Typography Section
+  * @example
+  * <div class="headings">
+  * <h1>Heading Level 1</h1>
+  * <h2>Heading Level 2</h2>
+  * <h3>Heading Level 3</h3>
+  * <h4>Heading Level 4</h4>
+  * <h5>Heading Level 5</h5>
+  * </div>
+  *
+  */
+/**
+   *
+   * @section Heading Classes
+   * @sectionof Typography Section
+   * @example
+   * <div class="headings">
+   * <h1 class="h1">Heading Level 1</h1>
+   * <h2 class="h2">Heading Level 2</h2>
+   * <h3 class="h3">Heading Level 3</h3>
+   * <h4 class="h4">Heading Level 4</h4>
+   * <h5 class="h5">Heading Level 5</h5>
+   * </div>
+   */
+/**
  *
  * @section Forms
  */
@@ -305,29 +359,6 @@ table {
     *   </fieldset>
     *  </form>
     */
-/**
- *  Icons
- *
- * Icons are tremendous
- *
- * @section
- *
- * @example
- * <div class="flexBox">
- * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
- * <span><img class="icons" src="../icons/gear.png">Gears</span>
- * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
- * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
- * </div>
- */
-.icons {
-  width: 30px;
-  height: 30px; }
-
-.flexBox {
-  display: flex;
-  justify-content: space-around; }
-
 /**
  *
  * @section Lists
@@ -433,107 +464,5 @@ table {
     .modal-content-container input:focus {
       outline-style: none; }
 
-/**
- * NavBar
- *
- * The main navigation menu and components
- *
- * @section
- *
- * @example
- * <div class="navigation-menu">
- *
- * </div>
- */
-/**
- *  Product Cards
- *
- * The Card for the Products
- *
- * @section
- *
- * @example
- * <div class="innercard">
- * <img src="../img/final-products-elevation.jpg">
- * <div class="innercardtitle"> Elevation </div>
- * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
- * <div class="btn"> ADD TO SITE </div>
- * </div>
- */
-.innercard {
-  height: 100%;
-  width: 310px; }
-
-.innercardtext {
-  /*background-color: red;*/
-  padding-top: 13px;
-  height: 133px;
-  width: 310px;
-  text-align: left;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 15px;
-  color: #8A8A8A;
-  border-bottom: 1px #DFDFDF solid; }
-
-.innercardtitle {
-  padding-top: 6px;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 26px;
-  color: #8A8A8A; }
-
-.btn {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #3384F2;
-  background: #FFFFFF;
-  margin-top: 13px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; }
-
-.btn:hover {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #3384F2;
-  margin-top: 13px;
-  text-decoration: none; }
-
-/**
- *
- * @section Typography Section
- */
-/**
-  *
-  * @section Headings
-  * @sectionof Typography Section
-  * @example
-  * <div class="headings">
-  * <h1>Heading Level 1</h1>
-  * <h2>Heading Level 2</h2>
-  * <h3>Heading Level 3</h3>
-  * <h4>Heading Level 4</h4>
-  * <h5>Heading Level 5</h5>
-  * </div>
-  *
-  */
-/**
-   *
-   * @section Heading Classes
-   * @sectionof Typography Section
-   * @example
-   * <div class="headings">
-   * <h1 class="h1">Heading Level 1</h1>
-   * <h2 class="h2">Heading Level 2</h2>
-   * <h3 class="h3">Heading Level 3</h3>
-   * <h4 class="h4">Heading Level 4</h4>
-   * <h5 class="h5">Heading Level 5</h5>
-   * </div>
-   */
 div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
   font-family: Roboto !important; }

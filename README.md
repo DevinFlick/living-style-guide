@@ -18,3 +18,7 @@ Comments are parsed by the generator using Markdown, for reference
 #### Good Reads on modular and atomic design
 [Why do modular design](https://www.smashingmagazine.com/2016/06/designing-modular-ui-systems-via-style-guide-driven-development/)
 [Concepts of Atomic Design by Brad Frost](http://bradfrost.com/blog/post/atomic-web-design/)
+
+#### The Sass sections are broke out in atomic design Concepts
+When you want to add a new sass file, add it to the subfolder appropriate to what kind of element it is. An atom, a molecule, an organism, a page, or a template. You can read the information above to learn what those concepts are. Then use an @import to import your sass file into the self-titled sass main file. Such as atom-style.scss, molecule.scss, organisms-style.scss, etc.
+All of these files get imported then into the style.scss file. Gulp then uses that one file to make one .css file that can be used in Fetch.
