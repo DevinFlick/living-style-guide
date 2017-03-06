@@ -11,15 +11,18 @@ var gulp            = require('gulp'),
     browserSync     = require('browser-sync').create();
 
 gulp.task('sass', function () {
-  return gulp.src('src/scss/**/*.scss')
+  return gulp.src('src/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('src/css'))
 });
 
-gulp.task('livingStyleGen', function(){
+gulp.task('livingcss', function(){
   gulp.src('src/css/*.css')
     .pipe(livingcss())
     .pipe(gulp.dest('dist'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 gulp.task('browserSync', function(){
@@ -31,11 +34,16 @@ gulp.task('browserSync', function(){
 })
 
 gulp.task('clean:dist', function() {
-  return del.sync('dist/*');
+  return del.sync('dist/*.html');
+})
+
+gulp.task('clean:src/css', function(){
+  return del.sync('src/css/*');
 })
 
 gulp.task('watch', function (){
-  gulp.watch('src/scss/**/*.scss', ['build']);
+  gulp.watch('src/scss/**/*.scss', ['sass']);
+  gulp.watch('src/css/*.css', ['livingcss']);
   gulp.watch('dist/*.html', browserSync.reload);
   gulp.watch('src/*.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', browserSync.reload);
@@ -44,8 +52,9 @@ gulp.task('watch', function (){
 gulp.task('default', function(){
   runSequence(
     'clean:dist',
+    'clean:src/css',
     'sass',
-    'livingStyleGen',
+    'livingcss',
     'watch',
     'browserSync'
   )

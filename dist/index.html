@@ -8066,111 +8066,545 @@
   </div><dom-module id="styleguide-styles">
     <template>
       <style>
-      /**
-   * Buttons
-   *
-   * The Button `.btn` class can be applied to `<button>`, `<input>`, or `<a>` elements.
-   *
+      @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+  /**
+   * Break Points
    * @section
-   *
    * @example
-   * <button class="btn">Button</button>
-   * <input type="submit" class="btn" value="Input"/>
-   * <a href="#" class="btn">Anchor</a>
+   * <div class="color-swatch-container">
+   * <table>
+   * <tr>
+   * <th>Stylus Variable</th>
+   * <th>Mobile<br> < 768px</th>
+   * <th>Tablet<br> >=768px</th>
+   * <th>Desktop<br> >=992px</th>
+   * <th>Desktop HD<br> >=1200px</th>
+   * </tr>
+   * <tr>
+   * <td class="stylus-variable">$break-mobile
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-tablet-below
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-tablet
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-tablet-above
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-desktop-below
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td>Hidden
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-desktop
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td>Hidden
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-desktop-above
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * </tr>
+   *
+   * <tr>
+   * <td class="stylus-variable">$break-desktop-hd
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td>Hidden
+   * </td>
+   * <td class="visible">Visible
+   * </td>
+   * </tr>
+   *
+   * </table>
+   * </div>
+   * @hideCode
    */
-  body.base-provider-dashboard-account md-button {
-    background-color: #3383F2; }
-    body.base-provider-dashboard-account md-button .md-btn1 {
-      color: #3383F2; }
-  
-  body.base-provider-dashboard-documentation md-button {
-    background-color: #3383F2; }
-    body.base-provider-dashboard-documentation md-button .md-btn1 {
-      color: #3383F2; }
-  
-  body.base-provider-dashboard-client md-button {
-    background-color: #3383F2; }
-    body.base-provider-dashboard-client md-button .md-btn1 {
-      color: #3383F2; }
+  table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #ccc; }
+    table .stylus-variable {
+      color: #d14; }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px; }
+    table .visible {
+      background-color: #f1f6d3; }
   
   /**
-     * Primary Button
-     *
-     * A primary button
-     *
-     * @section
-     *
-     * @example
-     * <button class="btn primary">Button</button>
-     * <input type="submit" class="btn primary" value="Input"/>
-     * <a href="#" class="btn primary">Anchor</a>
-     */
-  
-  
-      /**
-   * Buttons
+   *  Buttons
    *
-   * The Button `.btn` class can be applied to `<button>`, `<input>`, or `<a>` elements.
+   * Buttons are a things
    *
    * @section
    *
    * @example
-   * <button class="btn">Button</button>
-   * <input type="submit" class="btn" value="Input"/>
-   * <a href="#" class="btn">Anchor</a>
+   * <div class="btn"> ADD TO SITE </div>
    */
   .btn {
-    background-color: #ddd;
-    border-radius: 4px;
-    border: 2px solid transparent;
-    color: black;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1;
-    padding: 5px 15px;
-    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #3384F2;
+    background: #FFFFFF;
+    margin-top: 13px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none; }
   
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #aaa;
-      text-decoration: none;
-      cursor: pointer;
-    }
+  .btn:hover {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #3384F2;
+    margin-top: 13px;
+    text-decoration: none; }
   
-    &:disabled {
-      opacity: 0.5;
-    }
+  /**
+   * Colors
+   * @section
+   * @example
+   * <div class="color-swatch-container">
+   * <span class="color-swatch">
+   * <div id="light-blue" class="swatch">
+   * </div>
+   * <div class="color-swatch-title">
+   * Light Blue
+   * </div>
+   * <div class="color-codes">
+   * HEX #3383F2<br>
+   * RGB (51,131,242)
+   * </div>
+   * </span>
+   *
+   * <span class="color-swatch">
+   * <div id="dark-blue" class="swatch">
+   * </div>
+   * <div class="color-swatch-title">
+   * Dark Blue
+   * </div>
+   * <div class="color-codes">
+   * HEX #1461ad<br>
+   * RGB (20,97,173)
+   * </div>
+   * </span>
+   *
+   * <span class="color-swatch">
+   * <div id="off-white" class="swatch">
+   * </div>
+   * <div class="color-swatch-title">
+   * Off White
+   * </div>
+   * <div class="color-codes">
+   * HEX #f7f7f7<br>
+   * RGB (247,247,247)
+   * </div>
+   * </span>
+   *
+   * <span class="color-swatch">
+   * <div id="red" class="swatch">
+   * </div>
+   * <div class="color-swatch-title">
+   * Red
+   * </div>
+   * <div class="color-codes">
+   * HEX #E53935<br>
+   * RGB rgb(229,57,53)
+   * </div>
+   * </span>
+   *
+   * </div>
+   *
+   * @hideCode
+   */
+  .color-swatch-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .color-swatch-container .color-swatch {
+      width: 200px; }
+      .color-swatch-container .color-swatch .swatch {
+        width: 200px;
+        height: 200px;
+        border-radius: 3px; }
   
-    /**
-     * Primary Button
+  #red {
+    background-color: #e53935; }
+  
+  #light-blue {
+    background-color: #3383f2; }
+  
+  #dark-blue {
+    background-color: #1461ad; }
+  
+  #off-white {
+    background-color: #f7f7f7; }
+  
+  /**
+   *
+   * @section Forms
+   */
+  /**
+    *
+    * @section Text Field
+    * @sectionof Forms
+    * @example
+    * <fieldset>
+    * <p>
+    * <label for="text">Text Input</label>
+    * <input id="text" type="text" placeholder="Text Input"/>
+    * </p>
+    * <p>
+    * <label for="textarea">Textarea</label>
+    * <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+    * </p>
+    * <p>
+    * <label for="disabled_text">Disabled Input</label>
+    * <input id="disabled_text" type="text" placeholder="Disabled" disabled/>
+    * </p>
+    * </fieldset>
+    *
+    */
+  /**
      *
-     * A primary button
-     *
-     * @section
-     *
+     * @section Select Menu
+     * @sectionof Forms
      * @example
-     * <button class="btn primary">Button</button>
-     * <input type="submit" class="btn primary" value="Input"/>
-     * <a href="#" class="btn primary">Anchor</a>
+     * <label for="select">Select</label>
+     * <select id="select">
+     * <option>Option One</option>
+     * <option>Option Two</option>
+     * <option>Option Three</option>
+     * <option>Option Four</option>
+     * <option>Option Five</option>
+     * <option>Option Six</option>
+     * </select>
      */
-    &.primary {
-      background-color: #60b044;
-      background-image: linear-gradient(#8add6d, #60b044);
-      border-color: #5ca941;
-      color: #fff;
-    }
-    &.primary:hover {
-      background-color: #569e3d;
-      background-image: linear-gradient(#79d858, #569e3d);
-      border-color: #4a993e;
-    }
+  /**
+      *
+      * @section Checkbox
+      * @sectionof Forms
+      * @example
+      * <form action="#">
+      *   <fieldset>
+      *     <legend>List of checkboxes</legend>
+      *     <ul>
+      *       <li>
+      *         <label><input name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+      *       </li>
+      *       <li>
+      *         <label><input name="checkbox" type="checkbox"/>Choice B</label>
+      *       </li>
+      *       <li>
+      *         <label><input name="checkbox" type="checkbox"/>Choice C</label>
+      *       </li>
+      *     </ul>
+      *   </fieldset>
+      *  </form>
+      */
+  /**
+   *  Icons
+   *
+   * Icons are tremendous
+   *
+   * @section
+   *
+   * @example
+   * <div class="flexBox">
+   * <span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+   * <span><img class="icons" src="../icons/gear.png">Gears</span>
+   * <span><img class="icons" src="../icons/hover.png">Hotspot</span>
+   * <span><img class="icons" src="../icons/pencil.png">Writing More</span>
+   * </div>
+   */
+  .icons {
+    width: 30px;
+    height: 30px; }
   
-    &.smaller {
-      font-size: 10px;
-      padding: 4px 10px;
-    }
-  }
+  .flexBox {
+    display: flex;
+    justify-content: space-around; }
+  
+  /**
+   *
+   * @section Lists
+   */
+  /**
+    *
+    * @section Unordered Lists
+    * @sectionof Lists
+    * @example
+    * <ul>
+    * <li>Heading Level 1</li>
+    * <li>Heading Level 2</li>
+    * <li>Heading Level 3</li>
+    * <li>Heading Level 4</li>
+    * <li>Heading Level 5</li>
+    * </ul>
+    *
+    */
+  /**
+     *
+     * @section Ordered Lists
+     * @sectionof Lists
+     * @example
+     * <ol>
+     * <li class="h1">Heading Level 1</li>
+     * <li class="h2">Heading Level 2</li>
+     * <li class="h3">Heading Level 3</li>
+     * <li class="h4">Heading Level 4</li>
+     * <li class="h5">Heading Level 5</li>
+     * </ol>
+     */
+  /**
+   * Modals
+   *
+   * Modals for creating new project and other things.
+   *
+   * @section
+   *
+   * @example
+   * <div class="modal-content-container">
+   * <div class="modal-toolbar"><h2>Welcome To Fetch</h2></div>
+   * <div class="modal-content">
+   * <h3 class="modal-title">Name Project</h3>
+   * <h4 class="modal-subtitle">NAME</h4>
+   * <input class="inputField" type="text" />
+   * <h3 class="modal-title">Point of Contact</h3>
+   * <h4 class="modal-subtitle">FIRST NAME</h4>
+   * <input class="inputField" type="text" />
+   * <h4 class="modal-subtitle">LAST NAME</h4>
+   * <input class="inputField" type="text" />
+   * </div>
+   * </div>
+   */
+  .modal-content-container {
+    color: rgba(0, 0, 0, 0.87);
+    min-width: 600px;
+    height: 744px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    overflow: auto;
+    position: relative; }
+    .modal-content-container .modal-toolbar {
+      background-color: #3383f2;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      height: 56px;
+      color: #fff;
+      text-align: center; }
+    .modal-content-container .modal-content {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      right: 0; }
+      .modal-content-container .modal-content .modal-title {
+        color: #3383f2;
+        text-align: center; }
+      .modal-content-container .modal-content .modal-subtitle {
+        color: rgba(0, 0, 0, 0.870588);
+        text-align: center; }
+    .modal-content-container input {
+      order: 2;
+      display: block;
+      font-size: 14px;
+      margin: 0 auto;
+      background: none;
+      padding-top: 2px;
+      padding-bottom: 1px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 0 0 1px 0;
+      line-height: 26px;
+      height: 30px;
+      -ms-flex-preferred-size: 26px;
+      border-radius: 0;
+      border-style: solid;
+      width: 50%;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.87);
+      border-color: rgba(0, 0, 0, 0.12); }
+      .modal-content-container input:focus {
+        outline-style: none; }
+  
+  /**
+   * NavBar
+   *
+   * The main navigation menu and components
+   *
+   * @section
+   *
+   * @example
+   * <div class="navigation-menu">
+   *
+   * </div>
+   */
+  /**
+   *  Product Cards
+   *
+   * The Card for the Products
+   *
+   * @section
+   *
+   * @example
+   * <div class="innercard">
+   * <img src="../img/final-products-elevation.jpg">
+   * <div class="innercardtitle"> Elevation </div>
+   * <div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+   * <div class="btn"> ADD TO SITE </div>
+   * </div>
+   */
+  .innercard {
+    height: 100%;
+    width: 310px; }
+  
+  .innercardtext {
+    /*background-color: red;*/
+    padding-top: 13px;
+    height: 133px;
+    width: 310px;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    color: #8A8A8A;
+    border-bottom: 1px #DFDFDF solid; }
+  
+  .innercardtitle {
+    padding-top: 6px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 26px;
+    color: #8A8A8A; }
+  
+  .btn {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #3384F2;
+    background: #FFFFFF;
+    margin-top: 13px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none; }
+  
+  .btn:hover {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #3384F2;
+    margin-top: 13px;
+    text-decoration: none; }
+  
+  /**
+   *
+   * @section Typography Section
+   */
+  /**
+    *
+    * @section Headings
+    * @sectionof Typography Section
+    * @example
+    * <div class="headings">
+    * <h1>Heading Level 1</h1>
+    * <h2>Heading Level 2</h2>
+    * <h3>Heading Level 3</h3>
+    * <h4>Heading Level 4</h4>
+    * <h5>Heading Level 5</h5>
+    * </div>
+    *
+    */
+  /**
+     *
+     * @section Heading Classes
+     * @sectionof Typography Section
+     * @example
+     * <div class="headings">
+     * <h1 class="h1">Heading Level 1</h1>
+     * <h2 class="h2">Heading Level 2</h2>
+     * <h3 class="h3">Heading Level 3</h3>
+     * <h4 class="h4">Heading Level 4</h4>
+     * <h5 class="h5">Heading Level 5</h5>
+     * </div>
+     */
+  div, span, label, select, legend, ul, li, h1, h2, h3, h4, h5 {
+    font-family: Roboto !important; }
   
   
       </style>
@@ -8233,71 +8667,497 @@
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="buttons">
-          <h1 class="livingcss__article-title">Buttons</h1><div class="livingcss__section-description"><p>The Button <code>.btn</code> class can be applied to <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, or <code>&lt;a&gt;</code> elements.</p></div>
+        <article class="livingcss__article" id="break-points">
+          <h1 class="livingcss__article-title">Break Points</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button class="btn">Button</button>
-<input type="submit" class="btn" value="Input"/>
-<a href="#" class="btn">Anchor</a></livingcss-example>
+<livingcss-example><div class="color-swatch-container">
+<table>
+<tr>
+<th>Stylus Variable</th>
+<th>Mobile<br> < 768px</th>
+<th>Tablet<br> >=768px</th>
+<th>Desktop<br> >=992px</th>
+<th>Desktop HD<br> >=1200px</th>
+</tr>
+<tr>
+<td class="stylus-variable">$break-mobile
+</td>
+<td class="visible">Visible
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-tablet-below
+</td>
+<td class="visible">Visible
+</td>
+<td class="visible">Visible
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-tablet
+</td>
+<td>Hidden
+</td>
+<td class="visible">Visible
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-tablet-above
+</td>
+<td>Hidden
+</td>
+<td class="visible">Visible
+</td>
+<td class="visible">Visible
+</td>
+<td class="visible">Visible
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-desktop-below
+</td>
+<td class="visible">Visible
+</td>
+<td class="visible">Visible
+</td>
+<td class="visible">Visible
+</td>
+<td>Hidden
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-desktop
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+<td class="visible">Visible
+</td>
+<td>Hidden
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-desktop-above
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+<td class="visible">Visible
+</td>
+<td class="visible">Visible
+</td>
+</tr>
+
+<tr>
+<td class="stylus-variable">$break-desktop-hd
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+<td>Hidden
+</td>
+<td class="visible">Visible
+</td>
+</tr>
+
+</table>
+</div></livingcss-example>
+
+
+        </article>
+        <article class="livingcss__article" id="-buttons">
+          <h1 class="livingcss__article-title"> Buttons</h1><div class="livingcss__section-description"><p>Buttons are a things</p></div>
+
+<livingcss-example><div class="btn"> ADD TO SITE </div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;btn&quot;&gt; ADD TO SITE &lt;/div&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="primary-button">
-          <h1 class="livingcss__article-title">Primary Button</h1><div class="livingcss__section-description"><p>A primary button</p></div>
+        <article class="livingcss__article" id="colors">
+          <h1 class="livingcss__article-title">Colors</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button class="btn primary">Button</button>
-<input type="submit" class="btn primary" value="Input"/>
-<a href="#" class="btn primary">Anchor</a></livingcss-example>
+<livingcss-example><div class="color-swatch-container">
+<span class="color-swatch">
+<div id="light-blue" class="swatch">
+</div>
+<div class="color-swatch-title">
+Light Blue
+</div>
+<div class="color-codes">
+HEX #3383F2<br>
+RGB (51,131,242)
+</div>
+</span>
+
+<span class="color-swatch">
+<div id="dark-blue" class="swatch">
+</div>
+<div class="color-swatch-title">
+Dark Blue
+</div>
+<div class="color-codes">
+HEX #1461ad<br>
+RGB (20,97,173)
+</div>
+</span>
+
+<span class="color-swatch">
+<div id="off-white" class="swatch">
+</div>
+<div class="color-swatch-title">
+Off White
+</div>
+<div class="color-codes">
+HEX #f7f7f7<br>
+RGB (247,247,247)
+</div>
+</span>
+
+<span class="color-swatch">
+<div id="red" class="swatch">
+</div>
+<div class="color-swatch-title">
+Red
+</div>
+<div class="color-codes">
+HEX #E53935<br>
+RGB rgb(229,57,53)
+</div>
+</span>
+
+</div></livingcss-example>
+
+
+        </article>
+        <article class="livingcss__article" id="forms">
+          <h1 class="livingcss__article-title">Forms</h1><div class="livingcss__section-description"></div>
+
+
+
+<section class="livingcss__section" id="forms-text-field">
+  <h2>Text Field</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><fieldset>
+<p>
+<label for="text">Text Input</label>
+<input id="text" type="text" placeholder="Text Input"/>
+</p>
+<p>
+<label for="textarea">Textarea</label>
+<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+</p>
+<p>
+<label for="disabled_text">Disabled Input</label>
+<input id="disabled_text" type="text" placeholder="Disabled" disabled/>
+</p>
+</fieldset></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn primary&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn primary&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn primary&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;fieldset&gt;
+&lt;p&gt;
+&lt;label for&#x3D;&quot;text&quot;&gt;Text Input&lt;/label&gt;
+&lt;input id&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Text Input&quot;/&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;label for&#x3D;&quot;textarea&quot;&gt;Textarea&lt;/label&gt;
+&lt;textarea id&#x3D;&quot;textarea&quot; rows&#x3D;&quot;8&quot; cols&#x3D;&quot;48&quot; placeholder&#x3D;&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;label for&#x3D;&quot;disabled_text&quot;&gt;Disabled Input&lt;/label&gt;
+&lt;input id&#x3D;&quot;disabled_text&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Disabled&quot; disabled/&gt;
+&lt;/p&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="forms-select-menu">
+  <h2>Select Menu</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><label for="select">Select</label>
+<select id="select">
+<option>Option One</option>
+<option>Option Two</option>
+<option>Option Three</option>
+<option>Option Four</option>
+<option>Option Five</option>
+<option>Option Six</option>
+</select></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;label for&#x3D;&quot;select&quot;&gt;Select&lt;/label&gt;
+&lt;select id&#x3D;&quot;select&quot;&gt;
+&lt;option&gt;Option One&lt;/option&gt;
+&lt;option&gt;Option Two&lt;/option&gt;
+&lt;option&gt;Option Three&lt;/option&gt;
+&lt;option&gt;Option Four&lt;/option&gt;
+&lt;option&gt;Option Five&lt;/option&gt;
+&lt;option&gt;Option Six&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="forms-checkbox">
+  <h2>Checkbox</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><form action="#">
+  <fieldset>
+    <legend>List of checkboxes</legend>
+    <ul>
+      <li>
+        <label><input name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+      </li>
+      <li>
+        <label><input name="checkbox" type="checkbox"/>Choice B</label>
+      </li>
+      <li>
+        <label><input name="checkbox" type="checkbox"/>Choice C</label>
+      </li>
+    </ul>
+  </fieldset>
+ </form></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;form action&#x3D;&quot;#&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;List of checkboxes&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;label&gt;&lt;input name&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot; checked&#x3D;&quot;checked&quot;/&gt;Choice A&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label&gt;&lt;input name&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot;/&gt;Choice B&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;label&gt;&lt;input name&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot;/&gt;Choice C&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+ &lt;/form&gt;</code></pre>
+</div>
+
+</section>        </article>
+        <article class="livingcss__article" id="-icons">
+          <h1 class="livingcss__article-title"> Icons</h1><div class="livingcss__section-description"><p>Icons are tremendous</p></div>
+
+<livingcss-example><div class="flexBox">
+<span><img class="icons" src="../icons/check.png">Check. All Ok.</span>
+<span><img class="icons" src="../icons/gear.png">Gears</span>
+<span><img class="icons" src="../icons/hover.png">Hotspot</span>
+<span><img class="icons" src="../icons/pencil.png">Writing More</span>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;flexBox&quot;&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/check.png&quot;&gt;Check. All Ok.&lt;/span&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/gear.png&quot;&gt;Gears&lt;/span&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/hover.png&quot;&gt;Hotspot&lt;/span&gt;
+&lt;span&gt;&lt;img class&#x3D;&quot;icons&quot; src&#x3D;&quot;../icons/pencil.png&quot;&gt;Writing More&lt;/span&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="buttons">
-          <h1 class="livingcss__article-title">Buttons</h1><div class="livingcss__section-description"><p>The Button <code>.btn</code> class can be applied to <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, or <code>&lt;a&gt;</code> elements.</p></div>
+        <article class="livingcss__article" id="lists">
+          <h1 class="livingcss__article-title">Lists</h1><div class="livingcss__section-description"></div>
 
-<livingcss-example><button class="btn">Button</button>
-<input type="submit" class="btn" value="Input"/>
-<a href="#" class="btn">Anchor</a></livingcss-example>
+
+
+<section class="livingcss__section" id="lists-unordered-lists">
+  <h2>Unordered Lists</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><ul>
+<li>Heading Level 1</li>
+<li>Heading Level 2</li>
+<li>Heading Level 3</li>
+<li>Heading Level 4</li>
+<li>Heading Level 5</li>
+</ul></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;ul&gt;
+&lt;li&gt;Heading Level 1&lt;/li&gt;
+&lt;li&gt;Heading Level 2&lt;/li&gt;
+&lt;li&gt;Heading Level 3&lt;/li&gt;
+&lt;li&gt;Heading Level 4&lt;/li&gt;
+&lt;li&gt;Heading Level 5&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="lists-ordered-lists">
+  <h2>Ordered Lists</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><ol>
+<li class="h1">Heading Level 1</li>
+<li class="h2">Heading Level 2</li>
+<li class="h3">Heading Level 3</li>
+<li class="h4">Heading Level 4</li>
+<li class="h5">Heading Level 5</li>
+</ol></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;ol&gt;
+&lt;li class&#x3D;&quot;h1&quot;&gt;Heading Level 1&lt;/li&gt;
+&lt;li class&#x3D;&quot;h2&quot;&gt;Heading Level 2&lt;/li&gt;
+&lt;li class&#x3D;&quot;h3&quot;&gt;Heading Level 3&lt;/li&gt;
+&lt;li class&#x3D;&quot;h4&quot;&gt;Heading Level 4&lt;/li&gt;
+&lt;li class&#x3D;&quot;h5&quot;&gt;Heading Level 5&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+</section>        </article>
+        <article class="livingcss__article" id="modals">
+          <h1 class="livingcss__article-title">Modals</h1><div class="livingcss__section-description"><p>Modals for creating new project and other things.</p></div>
+
+<livingcss-example><div class="modal-content-container">
+<div class="modal-toolbar"><h2>Welcome To Fetch</h2></div>
+<div class="modal-content">
+<h3 class="modal-title">Name Project</h3>
+<h4 class="modal-subtitle">NAME</h4>
+<input class="inputField" type="text" />
+<h3 class="modal-title">Point of Contact</h3>
+<h4 class="modal-subtitle">FIRST NAME</h4>
+<input class="inputField" type="text" />
+<h4 class="modal-subtitle">LAST NAME</h4>
+<input class="inputField" type="text" />
+</div>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;modal-content-container&quot;&gt;
+&lt;div class&#x3D;&quot;modal-toolbar&quot;&gt;&lt;h2&gt;Welcome To Fetch&lt;/h2&gt;&lt;/div&gt;
+&lt;div class&#x3D;&quot;modal-content&quot;&gt;
+&lt;h3 class&#x3D;&quot;modal-title&quot;&gt;Name Project&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;modal-subtitle&quot;&gt;NAME&lt;/h4&gt;
+&lt;input class&#x3D;&quot;inputField&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;h3 class&#x3D;&quot;modal-title&quot;&gt;Point of Contact&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;modal-subtitle&quot;&gt;FIRST NAME&lt;/h4&gt;
+&lt;input class&#x3D;&quot;inputField&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;h4 class&#x3D;&quot;modal-subtitle&quot;&gt;LAST NAME&lt;/h4&gt;
+&lt;input class&#x3D;&quot;inputField&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
-        <article class="livingcss__article" id="primary-button">
-          <h1 class="livingcss__article-title">Primary Button</h1><div class="livingcss__section-description"><p>A primary button</p></div>
+        <article class="livingcss__article" id="navbar">
+          <h1 class="livingcss__article-title">NavBar</h1><div class="livingcss__section-description"><p>The main navigation menu and components</p></div>
 
-<livingcss-example><button class="btn primary">Button</button>
-<input type="submit" class="btn primary" value="Input"/>
-<a href="#" class="btn primary">Anchor</a></livingcss-example>
+<livingcss-example><div class="navigation-menu">
+
+</div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button class&#x3D;&quot;btn primary&quot;&gt;Button&lt;/button&gt;
-&lt;input type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn primary&quot; value&#x3D;&quot;Input&quot;/&gt;
-&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn primary&quot;&gt;Anchor&lt;/a&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;navigation-menu&quot;&gt;
+
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
+        <article class="livingcss__article" id="-product-cards">
+          <h1 class="livingcss__article-title"> Product Cards</h1><div class="livingcss__section-description"><p>The Card for the Products</p></div>
+
+<livingcss-example><div class="innercard">
+<img src="../img/final-products-elevation.jpg">
+<div class="innercardtitle"> Elevation </div>
+<div class="innercardtext"> A Digital Surface Model (DSM) is a 3D representation of a terrain's surface including structures and vegetation. This planet's interior heat provides an abundance of geothermal energy for fungus farming. </div>
+<div class="btn"> ADD TO SITE </div>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;innercard&quot;&gt;
+&lt;img src&#x3D;&quot;../img/final-products-elevation.jpg&quot;&gt;
+&lt;div class&#x3D;&quot;innercardtitle&quot;&gt; Elevation &lt;/div&gt;
+&lt;div class&#x3D;&quot;innercardtext&quot;&gt; A Digital Surface Model (DSM) is a 3D representation of a terrain&#x27;s surface including structures and vegetation. This planet&#x27;s interior heat provides an abundance of geothermal energy for fungus farming. &lt;/div&gt;
+&lt;div class&#x3D;&quot;btn&quot;&gt; ADD TO SITE &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="typography-section">
+          <h1 class="livingcss__article-title">Typography Section</h1><div class="livingcss__section-description"></div>
+
+
+
+<section class="livingcss__section" id="typography-section-headings">
+  <h2>Headings</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><div class="headings">
+<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;headings&quot;&gt;
+&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+&lt;h2&gt;Heading Level 2&lt;/h2&gt;
+&lt;h3&gt;Heading Level 3&lt;/h3&gt;
+&lt;h4&gt;Heading Level 4&lt;/h4&gt;
+&lt;h5&gt;Heading Level 5&lt;/h5&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="typography-section-heading-classes">
+  <h2>Heading Classes</h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><div class="headings">
+<h1 class="h1">Heading Level 1</h1>
+<h2 class="h2">Heading Level 2</h2>
+<h3 class="h3">Heading Level 3</h3>
+<h4 class="h4">Heading Level 4</h4>
+<h5 class="h5">Heading Level 5</h5>
+</div></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;headings&quot;&gt;
+&lt;h1 class&#x3D;&quot;h1&quot;&gt;Heading Level 1&lt;/h1&gt;
+&lt;h2 class&#x3D;&quot;h2&quot;&gt;Heading Level 2&lt;/h2&gt;
+&lt;h3 class&#x3D;&quot;h3&quot;&gt;Heading Level 3&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;h4&quot;&gt;Heading Level 4&lt;/h4&gt;
+&lt;h5 class&#x3D;&quot;h5&quot;&gt;Heading Level 5&lt;/h5&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+</section>        </article>
 
       </main>
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#buttons">Buttons</a>
-          <a class="livingcss__nav-link" href="#primary-button">Primary Button</a>
-          <a class="livingcss__nav-link" href="#buttons">Buttons</a>
-          <a class="livingcss__nav-link" href="#primary-button">Primary Button</a>
+          <a class="livingcss__nav-link" href="#break-points">Break Points</a>
+          <a class="livingcss__nav-link" href="#-buttons"> Buttons</a>
+          <a class="livingcss__nav-link" href="#colors">Colors</a>
+          <a class="livingcss__nav-link" href="#forms">Forms</a>
+          <a class="livingcss__nav-link" href="#-icons"> Icons</a>
+          <a class="livingcss__nav-link" href="#lists">Lists</a>
+          <a class="livingcss__nav-link" href="#modals">Modals</a>
+          <a class="livingcss__nav-link" href="#navbar">NavBar</a>
+          <a class="livingcss__nav-link" href="#-product-cards"> Product Cards</a>
+          <a class="livingcss__nav-link" href="#typography-section">Typography Section</a>
         </div>
       </nav>
 
